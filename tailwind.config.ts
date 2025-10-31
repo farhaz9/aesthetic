@@ -92,21 +92,12 @@ export default {
           'to': {
             'background-position': '200% center',
           }
-        },
-        'typing': {
-          'from': { width: '0' },
-          'to': { width: '100%' }
-        },
-        'blink-caret': {
-          'from, to': { 'border-color': 'transparent' },
-          '50%': { 'border-color': 'white' }
         }
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
-        'text-gradient': 'text-gradient 2s linear infinite',
-        'typing': 'typing 3.5s steps(40, end), blink-caret .75s step-end infinite',
+        'text-gradient': 'text-gradient 3s linear infinite',
       },
     },
   },
