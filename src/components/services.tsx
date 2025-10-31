@@ -2,6 +2,9 @@
 import Image from 'next/image';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { PlaceHolderImages, type ImagePlaceholder } from '@/lib/placeholder-images';
+import { Button } from './ui/button';
+import Link from 'next/link';
+import { ArrowRight } from 'lucide-react';
 
 const servicesData = [
   {
@@ -44,24 +47,31 @@ export default function Services() {
           {servicesData.map((service) => {
             const image = getImage(service.imageId);
             return (
-              <Card key={service.title} className="text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-2 group">
+              <Card key={service.title} className="text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-2 group flex flex-col">
                 <CardHeader>
                   <CardTitle className="font-headline text-2xl group-hover:text-primary transition-colors duration-300">{service.title}</CardTitle>
                 </CardHeader>
-                <CardContent>
-                  {image && (
-                     <div className="mb-4 aspect-video overflow-hidden rounded-md">
-                        <Image
-                          src={image.imageUrl}
-                          alt={image.description}
-                          width={600}
-                          height={400}
-                          data-ai-hint={image.imageHint}
-                          className="object-cover w-full h-full"
-                        />
-                     </div>
-                  )}
-                  <CardDescription className="text-base">{service.description}</CardDescription>
+                <CardContent className="flex-grow flex flex-col justify-between">
+                    <div>
+                        {image && (
+                            <div className="mb-4 aspect-video overflow-hidden rounded-md">
+                                <Image
+                                src={image.imageUrl}
+                                alt={image.description}
+                                width={600}
+                                height={400}
+                                data-ai-hint={image.imageHint}
+                                className="object-cover w-full h-full"
+                                />
+                            </div>
+                        )}
+                        <CardDescription className="text-base mb-4">{service.description}</CardDescription>
+                    </div>
+                    <Button asChild variant="link" className="mt-auto">
+                        <Link href="#appointment">
+                            Know More <ArrowRight className="ml-2 h-4 w-4" />
+                        </Link>
+                    </Button>
                 </CardContent>
               </Card>
             );
