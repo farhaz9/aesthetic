@@ -15,7 +15,7 @@ export default function Stats() {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center justify-around gap-8 text-center">
           {stats.map((stat, index) => (
-            <div key={index} className="flex flex-row items-center justify-center gap-4 group">
+            <div key={index} className="flex flex-col items-center justify-center gap-2 group">
               <stat.icon className="w-10 h-10 text-primary transition-transform duration-300 group-hover:scale-110 group-hover:-translate-y-1" />
               <div>
                 <p className="text-3xl md:text-4xl font-bold text-foreground">
@@ -28,7 +28,7 @@ export default function Stats() {
                     </>
                     )}
                 </p>
-                <p className="text-sm md:text-base text-muted-foreground mt-1 text-left">{stat.label}</p>
+                <p className="text-sm md:text-base text-muted-foreground mt-1">{stat.label}</p>
               </div>
             </div>
           ))}
