@@ -1,3 +1,4 @@
+'use client';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 
@@ -16,7 +17,7 @@ export default function Hero() {
         <div className="absolute top-0 left-0 w-full h-full bg-black/50"></div>
       </div>
       <div className="relative z-10 container mx-auto px-4">
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight">
+        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight bg-gradient-to-r from-yellow-400 via-red-500 to-purple-600 bg-clip-text text-transparent animate-text-gradient bg-[200%_auto]">
           Redefining Beauty, Restoring Confidence
         </h1>
         <p className="mt-4 max-w-2xl mx-auto text-lg md:text-xl text-white/90">
