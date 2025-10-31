@@ -62,25 +62,25 @@ export default function Gallery() {
             </Button>
           ))}
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {filteredItems.map((item, index) => {
               const beforeImg = getImage(item.beforeId);
               const afterImg = getImage(item.afterId);
               if (!beforeImg || !afterImg) return null;
 
               return(
-                <div key={index} className="space-y-4">
+                <div key={`${item.beforeId}-${item.afterId}`} className="space-y-4">
                     <h3 className="text-xl font-headline text-center">{item.category} Transformation</h3>
                     <div className="grid grid-cols-2 gap-4">
-                        <Card className="overflow-hidden">
+                        <Card className="overflow-hidden group">
                             <CardContent className="p-0 relative">
-                                <Image src={beforeImg.imageUrl} alt={beforeImg.description} width={600} height={600} data-ai-hint={beforeImg.imageHint} className="object-cover w-full h-full" />
+                                <Image src={beforeImg.imageUrl} alt={beforeImg.description} width={600} height={600} data-ai-hint={beforeImg.imageHint} className="object-cover aspect-square w-full h-auto transition-transform duration-300 group-hover:scale-105" />
                                 <div className="absolute bottom-0 w-full bg-black/50 text-white p-2 text-center font-bold font-headline">BEFORE</div>
                             </CardContent>
                         </Card>
-                        <Card className="overflow-hidden">
+                        <Card className="overflow-hidden group">
                             <CardContent className="p-0 relative">
-                                <Image src={afterImg.imageUrl} alt={afterImg.description} width={600} height={600} data-ai-hint={afterImg.imageHint} className="object-cover w-full h-full" />
+                                <Image src={afterImg.imageUrl} alt={afterImg.description} width={600} height={600} data-ai-hint={afterImg.imageHint} className="object-cover aspect-square w-full h-auto transition-transform duration-300 group-hover:scale-105" />
                                 <div className="absolute bottom-0 w-full bg-primary text-primary-foreground p-2 text-center font-bold font-headline">AFTER</div>
                             </CardContent>
                         </Card>
