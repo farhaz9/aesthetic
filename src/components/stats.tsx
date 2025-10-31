@@ -15,19 +15,21 @@ export default function Stats() {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
           {stats.map((stat, index) => (
-            <div key={index} className="flex flex-col items-center group">
-              <stat.icon className="w-10 h-10 mb-2 text-primary transition-transform duration-300 group-hover:scale-110 group-hover:-translate-y-1" />
-              <p className="text-3xl md:text-4xl font-bold text-foreground">
-                {stat.textValue ? (
-                  stat.textValue
-                ) : (
-                  <>
-                    <AnimatedNumber value={stat.value} />
-                    {stat.suffix || ''}
-                  </>
-                )}
-              </p>
-              <p className="text-sm md:text-base text-muted-foreground mt-1">{stat.label}</p>
+            <div key={index} className="flex flex-row items-center justify-center gap-4 group">
+              <stat.icon className="w-10 h-10 text-primary transition-transform duration-300 group-hover:scale-110 group-hover:-translate-y-1" />
+              <div>
+                <p className="text-3xl md:text-4xl font-bold text-foreground">
+                    {stat.textValue ? (
+                    stat.textValue
+                    ) : (
+                    <>
+                        <AnimatedNumber value={stat.value} />
+                        {stat.suffix || ''}
+                    </>
+                    )}
+                </p>
+                <p className="text-sm md:text-base text-muted-foreground mt-1 text-left">{stat.label}</p>
+              </div>
             </div>
           ))}
         </div>
