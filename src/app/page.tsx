@@ -7,6 +7,7 @@ import AppointmentForm from '@/components/appointment-form';
 import Faq from '@/components/faq';
 import Footer from '@/components/footer';
 import BottomNavBar from '@/components/bottom-nav-bar';
+import Stats from '@/components/stats';
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Header />
       <main className="flex-1">
         <Hero />
+        <Stats />
         <Services />
         <Gallery />
         <Testimonials />
