@@ -15,9 +15,9 @@ export default function Stats() {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
           {stats.map((stat, index) => (
-            <div key={index} className="flex flex-col items-center justify-center gap-2 group">
+            <div key={index} className="flex flex-col items-center justify-start gap-2 group">
               <stat.icon className="w-10 h-10 text-primary transition-transform duration-300 group-hover:scale-110 group-hover:-translate-y-1" />
-              <div>
+              <div className="mt-2">
                 <p className="text-3xl md:text-4xl font-bold text-foreground">
                     {stat.textValue ? (
                     stat.textValue
