@@ -1,31 +1,27 @@
+'use client';
 import Image from 'next/image';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { PlaceHolderImages, type ImagePlaceholder } from '@/lib/placeholder-images';
-import { Waves, HeartPulse, Sparkles, Gem } from 'lucide-react';
 
 const servicesData = [
   {
     title: 'Hair Patches',
     description: 'Non-surgical, natural-looking hair patches for instant volume and coverage. Custom-made to match your hair perfectly.',
-    icon: <Waves className="h-8 w-8 text-primary" />,
     imageId: 'hair-patch-service'
   },
   {
     title: 'Hair Transplants',
     description: 'Advanced FUE and FUT hair transplant procedures for permanent, natural-looking results. Restore your hairline and confidence.',
-    icon: <HeartPulse className="h-8 w-8 text-primary" />,
     imageId: 'hair-transplant-service'
   },
   {
     title: 'Cosmetic Procedures',
     description: 'A wide range of surgical and non-surgical treatments to enhance your natural beauty, from facelifts to fillers.',
-    icon: <Sparkles className="h-8 w-8 text-primary" />,
     imageId: 'cosmetic-procedure-service'
   },
   {
     title: 'Bridal & Groom Packages',
     description: 'Look your absolute best on your special day with our curated packages including skin, hair, and makeup services.',
-    icon: <Gem className="h-8 w-8 text-primary" />,
     imageId: 'bridal-groom-service'
   },
 ];
@@ -48,12 +44,9 @@ export default function Services() {
           {servicesData.map((service) => {
             const image = getImage(service.imageId);
             return (
-              <Card key={service.title} className="text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+              <Card key={service.title} className="text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-2 group">
                 <CardHeader>
-                  <div className="mx-auto bg-primary/10 p-4 rounded-full mb-4 w-fit">
-                    {service.icon}
-                  </div>
-                  <CardTitle className="font-headline text-2xl">{service.title}</CardTitle>
+                  <CardTitle className="font-headline text-2xl group-hover:text-primary transition-colors duration-300">{service.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
                   {image && (
