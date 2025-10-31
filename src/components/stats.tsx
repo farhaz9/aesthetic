@@ -13,7 +13,7 @@ export default function Stats() {
   return (
     <section className="bg-background py-12 sm:py-16">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+        <div className="flex flex-col md:flex-row items-center justify-around gap-8 text-center">
           {stats.map((stat, index) => (
             <div key={index} className="flex flex-row items-center justify-center gap-4 group">
               <stat.icon className="w-10 h-10 text-primary transition-transform duration-300 group-hover:scale-110 group-hover:-translate-y-1" />
