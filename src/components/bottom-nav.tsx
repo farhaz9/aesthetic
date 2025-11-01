@@ -2,13 +2,14 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Home, Stethoscope, Phone } from 'lucide-react';
+import { Home, Stethoscope, Phone, MessageCircle } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const navLinks = [
-  { href: '/', label: 'Home', icon: Home },
-  { href: '/#services', label: 'Services', icon: Stethoscope },
+  { href: '/#services', label: 'Treatments', icon: Stethoscope },
   { href: '/contact', label: 'Contact', icon: Phone },
+  { href: 'https://wa.me/13105550101', label: 'WhatsApp', icon: MessageCircle },
+  { href: '/#appointment', label: 'Appointment', icon: Home },
 ];
 
 export default function BottomNav() {
@@ -24,6 +25,7 @@ export default function BottomNav() {
               <Link
                 key={link.href}
                 href={link.href}
+                target={link.label === 'WhatsApp' ? '_blank' : '_self'}
                 className={cn(
                   'flex flex-col items-center justify-center text-sm font-medium transition-colors',
                   isActive ? 'text-primary' : 'text-muted-foreground hover:text-primary'

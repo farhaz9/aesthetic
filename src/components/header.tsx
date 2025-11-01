@@ -1,14 +1,12 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
-import { Menu } from 'lucide-react';
+import { Menu, MessageCircle } from 'lucide-react';
 
 const navLinks = [
-  { href: '#services', label: 'Services' },
-  { href: '#about', label: 'Our Process' },
-  { href: '#testimonials', label: 'Testimonials' },
-  { href: '#faq', label: 'FAQ' },
+  { href: '#services', label: 'Treatments' },
   { href: '/contact', label: 'Contact' },
+  { href: 'https://wa.me/13105550101', label: 'WhatsApp' },
 ];
 
 const IconPlaceholder = () => (
@@ -32,6 +30,7 @@ export default function Header() {
               <Link
                 key={link.href}
                 href={link.href}
+                target={link.label === 'WhatsApp' ? '_blank' : '_self'}
                 className="transition-colors hover:text-primary text-foreground/80"
               >
                 {link.label}
@@ -41,11 +40,11 @@ export default function Header() {
         </div>
         <div className="flex flex-1 items-center justify-end space-x-2">
            <Button asChild className="hidden md:inline-flex">
-             <Link href="#appointment">Book Consultation</Link>
+             <Link href="#appointment">Appointment</Link>
            </Button>
            <div className="md:hidden">
             <Button asChild>
-                <Link href="#appointment">Book Now</Link>
+                <Link href="#appointment">Appointment</Link>
             </Button>
            </div>
         </div>
