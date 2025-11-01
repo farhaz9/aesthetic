@@ -1,3 +1,4 @@
+'use client';
 import Header from '@/components/header';
 import Hero from '@/components/hero';
 import FeaturedServices from '@/components/featured-services';
@@ -6,20 +7,22 @@ import Testimonials from '@/components/testimonials';
 import Faq from '@/components/faq';
 import AppointmentForm from '@/components/appointment-form';
 import Footer from '@/components/footer';
+import BottomNav from '@/components/bottom-nav';
 
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
-      <main className="flex-1">
+      <main className="flex-1 pb-20">
         <Hero />
         <FeaturedServices />
+        <AppointmentForm />
         <OurProcess />
         <Testimonials />
         <Faq />
-        <AppointmentForm />
       </main>
       <Footer />
+      <BottomNav />
     </div>
   );
 }

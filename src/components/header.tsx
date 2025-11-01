@@ -8,7 +8,7 @@ const navLinks = [
   { href: '#about', label: 'Our Process' },
   { href: '#testimonials', label: 'Testimonials' },
   { href: '#faq', label: 'FAQ' },
-  { href: '#contact', label: 'Contact' },
+  { href: '/contact', label: 'Contact' },
 ];
 
 const IconPlaceholder = () => (
@@ -20,7 +20,7 @@ const IconPlaceholder = () => (
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="sticky top-0 z-40 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center">
         <div className="mr-4 flex items-center">
           <Link href="/" className="mr-6 flex items-center space-x-2">
@@ -40,33 +40,14 @@ export default function Header() {
           </nav>
         </div>
         <div className="flex flex-1 items-center justify-end space-x-2">
-           <Button asChild>
+           <Button asChild className="hidden md:inline-flex">
              <Link href="#appointment">Book Consultation</Link>
            </Button>
-           <Sheet>
-            <SheetTrigger asChild>
-              <Button variant="outline" size="icon" className="md:hidden">
-                <Menu className="h-4 w-4" />
-              </Button>
-            </SheetTrigger>
-            <SheetContent side="right">
-              <nav className="grid gap-6 text-lg font-medium mt-8">
-                <Link href="/" className="flex items-center gap-2 text-lg font-semibold">
-                  <IconPlaceholder />
-                  <span className="font-headline">Follicle & Form</span>
-                </Link>
-                {navLinks.map(link => (
-                  <Link
-                    key={link.href}
-                    href={link.href}
-                    className="text-muted-foreground hover:text-foreground"
-                  >
-                    {link.label}
-                  </Link>
-                ))}
-              </nav>
-            </SheetContent>
-          </Sheet>
+           <div className="md:hidden">
+            <Button asChild>
+                <Link href="#appointment">Book Now</Link>
+            </Button>
+           </div>
         </div>
       </div>
     </header>
