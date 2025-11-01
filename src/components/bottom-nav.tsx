@@ -34,7 +34,7 @@ export default function BottomNav() {
       <div className="container mx-auto px-0">
         <div className="flex justify-around items-center h-16">
           {navLinks.map((link) => {
-            const isActive = link.href === '/' ? pathname === link.href : pathname.startsWith(link.href) || (link.href.startsWith('/#') && pathname === '/');
+            const isActive = pathname === link.href;
             const isWhatsApp = link.label === 'WhatsApp';
             const Icon = link.icon;
             return (
