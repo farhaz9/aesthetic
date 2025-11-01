@@ -8,7 +8,7 @@ export default function Hero() {
     <section id="home" className="relative h-[85vh] min-h-[600px] w-full flex items-center p-0">
        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-black/30 z-10" />
        <Image
-          src="https://picsum.photos/seed/clinic-hero/1800/1200"
+          src="https://images-five-gilt.vercel.app/1759649928.png"
           alt="A modern and clean clinic interior"
           fill
           className="object-cover"
@@ -30,7 +30,7 @@ export default function Hero() {
               <Link href="#services">Explore Services</Link>
             </Button>
             <Button size="lg" variant="outline" className="bg-transparent text-white border-white hover:bg-white hover:text-black">
-              <Link href="#contact">Book a Consultation</Link>
+              <Link href="#appointment">Book a Consultation</Link>
             </Button>
           </div>
         </div>

@@ -7,6 +7,7 @@ const navLinks = [
   { href: '#services', label: 'Services' },
   { href: '#about', label: 'Our Process' },
   { href: '#testimonials', label: 'Testimonials' },
+  { href: '#faq', label: 'FAQ' },
   { href: '#contact', label: 'Contact' },
 ];
 
@@ -40,7 +41,7 @@ export default function Header() {
         </div>
         <div className="flex flex-1 items-center justify-end space-x-2">
            <Button asChild>
-             <Link href="#contact">Book Consultation</Link>
+             <Link href="#appointment">Book Consultation</Link>
            </Button>
            <Sheet>
             <SheetTrigger asChild>

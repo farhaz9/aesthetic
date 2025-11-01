@@ -3,6 +3,8 @@ import Hero from '@/components/hero';
 import FeaturedServices from '@/components/featured-services';
 import OurProcess from '@/components/our-process';
 import Testimonials from '@/components/testimonials';
+import Faq from '@/components/faq';
+import AppointmentForm from '@/components/appointment-form';
 import Footer from '@/components/footer';
 
 export default function Home() {
@@ -14,6 +16,8 @@ export default function Home() {
         <FeaturedServices />
         <OurProcess />
         <Testimonials />
+        <Faq />
+        <AppointmentForm />
       </main>
       <Footer />
     </div>
