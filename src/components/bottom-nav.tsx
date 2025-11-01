@@ -31,7 +31,7 @@ export default function BottomNav() {
 
   return (
     <nav className="fixed bottom-0 left-0 right-0 z-50 bg-background border-t md:hidden">
-      <div className="container mx-auto px-2">
+      <div className="container mx-auto px-0">
         <div className="flex justify-around items-center h-16">
           {navLinks.map((link) => {
             const isActive = link.href === '/' ? pathname === link.href : pathname.startsWith(link.href) || (link.href.startsWith('/#') && pathname === '/');
@@ -42,7 +42,7 @@ export default function BottomNav() {
                 href={link.href}
                 target={isWhatsApp ? '_blank' : '_self'}
                 className={cn(
-                  'flex flex-col items-center justify-center text-xs font-medium transition-colors flex-1 text-center px-1',
+                  'flex flex-col items-center justify-center text-xs font-medium transition-colors flex-1 text-center h-full',
                   isActive ? 'text-primary' : 'text-muted-foreground hover:text-primary',
                   isWhatsApp && 'animate-blink-whatsapp'
                 )}
