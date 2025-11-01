@@ -20,9 +20,9 @@ const WhatsAppIcon = ({ className }: { className?: string }) => (
 
 const navLinks = [
   { href: '/#services', label: 'Treatments', icon: Stethoscope },
-  { href: '/contact', label: 'Contact', icon: Phone },
-  { href: '/', label: 'Home', icon: Home },
   { href: '/#appointment', label: 'Appointment', icon: CalendarCheck },
+  { href: '/', label: 'Home', icon: Home },
+  { href: '/contact', label: 'Contact', icon: Phone },
   { href: 'https://wa.me/13105550101', label: 'WhatsApp', icon: WhatsAppIcon },
 ];
 

@@ -5,6 +5,7 @@ import { Menu, MessageCircle } from 'lucide-react';
 
 const navLinks = [
   { href: '#services', label: 'Treatments' },
+  { href: '#appointment', label: 'Appointment' },
   { href: '/contact', label: 'Contact' },
   { href: 'https://wa.me/13105550101', label: 'WhatsApp' },
 ];
@@ -40,7 +41,7 @@ export default function Header() {
         </div>
         <div className="flex flex-1 items-center justify-end space-x-2">
            <Button asChild className="hidden md:inline-flex">
-             <Link href="#appointment">Appointment</Link>
+             <Link href="#appointment">Book Now</Link>
            </Button>
            <Sheet>
             <SheetTrigger asChild>
