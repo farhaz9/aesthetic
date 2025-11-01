@@ -38,7 +38,7 @@
     --popover: 24 9.8% 10%;
     --popover-foreground: 0 0% 98%;
     --primary: 24.6 95% 53.1%;
-    --primary-foreground: 0 0% 98%;
+    --primary-foreground: 0- 0% 98%;
     --secondary: 12 6.5% 15.1%;
     --secondary-foreground: 0 0% 98%;
     --muted: 12 6.5% 15.1%;
@@ -61,7 +61,7 @@
     @apply bg-background text-foreground;
   }
   section {
-    @apply w-full py-12 md:py-24;
+    @apply w-full py-12 md:py-24 px-4 sm:px-6;
   }
   h1, h2, h3, h4, h5, h6 {
     @apply font-headline;
@@ -69,19 +69,26 @@
   html {
     @apply scroll-smooth;
   }
+  input::placeholder, textarea::placeholder {
+      @apply text-sm;
+  }
+  input, textarea {
+      @apply text-sm;
+  }
+
 }
 
 @layer utilities {
   @keyframes blink-green {
-    0%, 100% {
-      color: #25D366; /* WhatsApp Green */
+    0%, 40%, 100% {
+      color: inherit;
     }
     50% {
-      color: #128C7E; /* Darker WhatsApp Green */
+      color: #25D366; /* WhatsApp Green */
     }
   }
   .animate-blink-whatsapp {
-    animation: blink-green 1.5s infinite;
+    animation: blink-green 2.5s infinite;
     animation-delay: 5s;
   }
 }
