@@ -42,11 +42,33 @@ export default function Header() {
            <Button asChild className="hidden md:inline-flex">
              <Link href="#appointment">Appointment</Link>
            </Button>
-           <div className="md:hidden">
-            <Button asChild>
-                <Link href="#appointment">Appointment</Link>
-            </Button>
-           </div>
+           <Sheet>
+            <SheetTrigger asChild>
+                <Button variant="outline" size="icon" className="md:hidden">
+                    <Menu className="h-4 w-4" />
+                </Button>
+            </SheetTrigger>
+            <SheetContent side="left">
+                <div className="grid gap-4 py-4">
+                    <Link href="/" className="flex items-center space-x-2">
+                        <IconPlaceholder />
+                        <span className="font-bold font-headline text-xl">Follicle & Form</span>
+                    </Link>
+                    <nav className="grid gap-2">
+                        {navLinks.map(link => (
+                            <Link
+                                key={link.href}
+                                href={link.href}
+                                target={link.label === 'WhatsApp' ? '_blank' : '_self'}
+                                className="flex items-center space-x-2 rounded-md p-2 hover:bg-accent"
+                            >
+                                <span>{link.label}</span>
+                            </Link>
+                        ))}
+                    </nav>
+                </div>
+            </SheetContent>
+           </Sheet>
         </div>
       </div>
     </header>
