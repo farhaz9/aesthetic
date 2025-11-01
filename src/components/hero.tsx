@@ -8,7 +8,7 @@ export default function Hero() {
     <section id="home" className="relative h-[80vh] min-h-[500px] w-full flex items-center justify-center text-center text-white p-0">
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-0">
          <Image
-            src="https://images-five-gilt.vercel.app/Untitled-design-17.png.webp"
+            src="https://images-five-gilt.vercel.app/1759649928.png"
             alt="Beautiful woman with elegant hairstyle"
             fill
             className="object-cover"
