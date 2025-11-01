@@ -11,9 +11,11 @@ const navLinks = [
 ];
 
 const IconPlaceholder = () => (
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-6 w-6 text-primary">
-        <path d="M14 12a2 2 0 1 0-4 0 2 2 0 0 0 4 0Z" />
-        <path d="M21 12c-1.66-1-1.66-4-1.66-4-3.34 0-3.34-4-5-4-1.67 0-1.67 4-5 4 0 0 .01 3-1.66 4-1.67 1-1.67 4-1.67 4 3.33 0 3.33 4 5 4 1.66 0 1.66-4 5-4 .01-1-1.66-3-1.67-4Z"/>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-8 w-8 text-primary">
+        <path d="M9 3l-2 10M15 3l2 10" />
+        <path d="M12 13a4 4 0 0 0-4 4h8a4 4 0 0 0-4-4v0Z" />
+        <path d="M8 21a2 2 0 0 0 2-2" />
+        <path d="M16 21a2 2 0 0 1-2-2" />
     </svg>
 )
 
