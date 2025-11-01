@@ -8,6 +8,7 @@ import Faq from '@/components/faq';
 import AppointmentForm from '@/components/appointment-form';
 import Footer from '@/components/footer';
 import BottomNav from '@/components/bottom-nav';
+import ScrollToTop from '@/components/scroll-to-top';
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
       </main>
       <Footer />
       <BottomNav />
+      <ScrollToTop />
     </div>
   );
 }
