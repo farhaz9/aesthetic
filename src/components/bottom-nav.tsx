@@ -2,15 +2,23 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Home, Stethoscope, Phone, CalendarCheck, MessageSquare } from 'lucide-react';
+import { Home, Stethoscope, Phone, CalendarCheck } from 'lucide-react';
 import { cn } from '@/lib/utils';
+
+const WhatsAppIcon = () => (
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round" >
+       <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+       <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" fill="currentColor"></path>
+       <path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a4 4 0 0 1 -4 -4v-1a.5 .5 0 0 0 -1 0" fill="white"></path>
+    </svg>
+)
 
 const navLinks = [
   { href: '/#services', label: 'Treatments', icon: Stethoscope },
   { href: '/contact', label: 'Contact', icon: Phone },
   { href: '/', label: 'Home', icon: Home },
   { href: '/#appointment', label: 'Appointment', icon: CalendarCheck },
-  { href: 'https://wa.me/13105550101', label: 'WhatsApp', icon: MessageSquare },
+  { href: 'https://wa.me/13105550101', label: 'WhatsApp', icon: WhatsAppIcon },
 ];
 
 export default function BottomNav() {
