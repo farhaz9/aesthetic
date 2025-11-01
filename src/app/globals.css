@@ -75,11 +75,9 @@
   @keyframes blink-green {
     0%, 100% {
       color: #25D366; /* WhatsApp Green */
-      transform: scale(1);
     }
     50% {
       color: #128C7E; /* Darker WhatsApp Green */
-      transform: scale(1.1);
     }
   }
   .animate-blink-whatsapp {

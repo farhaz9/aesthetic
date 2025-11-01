@@ -5,12 +5,12 @@ import { usePathname } from 'next/navigation';
 import { Home, Stethoscope, Phone, CalendarCheck } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
-const WhatsAppIcon = () => (
+const WhatsAppIcon = ({ className }: { className?: string }) => (
     <svg
       role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
-      className="w-6 h-6"
+      className={cn("w-6 h-6", className)}
       fill="currentColor"
     >
       <title>WhatsApp</title>
@@ -36,18 +36,18 @@ export default function BottomNav() {
           {navLinks.map((link) => {
             const isActive = link.href === '/' ? pathname === link.href : pathname.startsWith(link.href) || (link.href.startsWith('/#') && pathname === '/');
             const isWhatsApp = link.label === 'WhatsApp';
+            const Icon = link.icon;
             return (
               <Link
                 key={link.href}
                 href={link.href}
                 target={isWhatsApp ? '_blank' : '_self'}
                 className={cn(
-                  'flex flex-col items-center justify-center text-xs font-medium transition-colors flex-1 text-center h-full',
+                  'flex flex-col items-center justify-center text-xs font-medium transition-colors flex-1 text-center h-full p-1',
                   isActive ? 'text-primary' : 'text-muted-foreground hover:text-primary',
-                  isWhatsApp && 'animate-blink-whatsapp'
                 )}
               >
-                <link.icon />
+                <Icon className={cn(isWhatsApp && 'animate-blink-whatsapp')} />
                 <span className="truncate">{link.label}</span>
               </Link>
             );
