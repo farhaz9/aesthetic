@@ -39,8 +39,9 @@ const getImage = (id: string): ImagePlaceholder | undefined => {
 
 export default function FeaturedServices() {
   return (
-    <section id="services" className="bg-background">
-      <div className="container mx-auto px-4">
+    <section id="services" className="bg-secondary relative">
+      <div className="absolute inset-0 -z-0 bg-gradient-radial from-amber-100/50 to-transparent to-70% pointer-events-none" />
+      <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold">Services</h2>
           <p className="text-lg text-muted-foreground mt-2 max-w-3xl mx-auto">
@@ -51,7 +52,7 @@ export default function FeaturedServices() {
           {featuredServicesData.map((service) => {
             const image = getImage(service.imageId);
             return (
-              <Card key={service.name} className="overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-2 group flex flex-col">
+              <Card key={service.name} className="overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-2 group flex flex-col bg-card">
                 <CardContent className="p-0">
                   {image && (
                       <div className="aspect-[4/3] overflow-hidden">

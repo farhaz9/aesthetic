@@ -6,13 +6,13 @@
   :root {
     --background: 0 0% 100%; /* White */
     --foreground: 24 9.8% 10%; /* Almost Black */
-    --card: 240 4.8% 95.9%; /* Light Gray */
+    --card: 0 0% 100%; /* White */
     --card-foreground: 24 9.8% 10%;
     --popover: 0 0% 100%;
     --popover-foreground: 24 9.8% 10%;
     --primary: 24.6 95% 53.1%; /* Burnt Orange */
     --primary-foreground: 0 0% 98%;
-    --secondary: 35.5 91.7% 91.4%; /* Peach */
+    --secondary: 40 50% 96%; /* Light Cream */
     --secondary-foreground: 24 9.8% 10%;
     --muted: 240 4.8% 95.9%; /* Light Gray */
     --muted-foreground: 24 5.4% 63.9%;
@@ -75,7 +75,6 @@
   input, textarea {
       @apply text-sm;
   }
-
 }
 
 @layer utilities {
