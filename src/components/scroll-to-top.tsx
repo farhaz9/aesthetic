@@ -34,10 +34,11 @@ export default function ScrollToTop() {
   return (
     <div className="fixed bottom-20 right-4 z-50">
       <Button
+        variant="outline"
         size="icon"
         onClick={scrollToTop}
         className={cn(
-          'rounded-full h-12 w-12 transition-opacity duration-300',
+          'rounded-full h-12 w-12 transition-opacity duration-300 bg-background/50 hover:bg-primary hover:text-primary-foreground backdrop-blur-sm',
           isVisible ? 'opacity-100' : 'opacity-0'
         )}
         style={{ pointerEvents: isVisible ? 'auto' : 'none' }}
