@@ -1,19 +1,19 @@
 'use client';
 import { Button } from '@/components/ui/button';
+import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Hero() {
   return (
     <section id="home" className="relative h-[80vh] min-h-[500px] w-full flex items-center justify-center text-center text-white p-0">
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-0">
-         <iframe
-            className="absolute top-1/2 left-1/2 w-full h-full object-cover -translate-x-1/2 -translate-y-1/2"
-            src="https://www.youtube.com/embed/nUPgg_L5ko4?autoplay=1&mute=1&loop=1&playlist=nUPgg_L5ko4&controls=0&showinfo=0&autohide=1&modestbranding=1&rel=0"
-            frameBorder="0"
-            allow="autoplay; encrypted-media"
-            allowFullScreen
-            title="background-video"
-        ></iframe>
+         <Image
+            src="https://images-five-gilt.vercel.app/Untitled-design-17.png.webp"
+            alt="Beautiful woman with elegant hairstyle"
+            fill
+            className="object-cover"
+            priority
+         />
         <div className="absolute top-0 left-0 w-full h-full bg-black/50"></div>
       </div>
       <div className="relative z-10 container mx-auto px-4">
