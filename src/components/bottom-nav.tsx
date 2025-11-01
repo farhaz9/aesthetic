@@ -19,7 +19,7 @@ const WhatsAppIcon = ({ className }: { className?: string }) => (
 );
 
 const navLinks = [
-  { href: '/#services', label: 'Treatments', icon: Stethoscope },
+  { href: '/treatments', label: 'Treatments', icon: Stethoscope },
   { href: '/#appointment', label: 'Appointment', icon: CalendarCheck },
   { href: '/', label: 'Home', icon: Home },
   { href: '/contact', label: 'Contact', icon: Phone },
@@ -34,7 +34,7 @@ export default function BottomNav() {
       <div className="container mx-auto px-0">
         <div className="flex justify-around items-center h-16">
           {navLinks.map((link) => {
-            const isActive = pathname === link.href;
+            const isActive = (pathname === link.href) || (link.href !== '/' && pathname.startsWith(link.href) && link.href.length > 1);
             const isWhatsApp = link.label === 'WhatsApp';
             const Icon = link.icon;
             return (

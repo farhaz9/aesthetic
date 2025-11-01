@@ -27,10 +27,10 @@ export default function Hero() {
           </p>
           <div className="mt-8 flex flex-col sm:flex-row justify-center md:justify-start gap-4">
             <Button size="lg" asChild className="w-full sm:w-auto">
-              <Link href="#services">Explore Services</Link>
+              <Link href="/treatments">Explore Services</Link>
             </Button>
             <Button size="lg" variant="outline" className="bg-transparent text-white border-white hover:bg-white hover:text-black w-full sm:w-auto">
-              <Link href="#appointment">Book a Consultation</Link>
+              <Link href="/#appointment">Book a Consultation</Link>
             </Button>
           </div>
         </div>

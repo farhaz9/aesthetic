@@ -4,8 +4,8 @@ import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Menu, MessageCircle } from 'lucide-react';
 
 const navLinks = [
-  { href: '#services', label: 'Treatments' },
-  { href: '#appointment', label: 'Appointment' },
+  { href: '/treatments', label: 'Treatments' },
+  { href: '/#appointment', label: 'Appointment' },
   { href: '/contact', label: 'Contact' },
   { href: 'https://wa.me/13105550101', label: 'WhatsApp' },
 ];

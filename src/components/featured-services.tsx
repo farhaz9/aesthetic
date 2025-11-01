@@ -11,25 +11,25 @@ const featuredServicesData = [
     name: 'FUE Hair Transplant',
     description: 'Minimally invasive follicular unit extraction for natural, permanent results.',
     imageId: 'service-hair-transplant',
-    link: '#',
+    link: '/treatments',
   },
   {
     name: 'Cosmetic Injectables',
     description: 'Reduce fine lines and restore volume with our range of dermal fillers.',
     imageId: 'service-injectables',
-    link: '#',
+    link: '/treatments',
   },
   {
     name: 'Advanced Skincare',
     description: 'Revitalize your skin with medical-grade facials and laser treatments.',
     imageId: 'service-skincare',
-    link: '#',
+    link: '/treatments',
   },
   {
     name: 'Body Contouring',
     description: 'Non-surgical solutions to shape and sculpt your body with lasting results.',
     imageId: 'service-body',
-    link: '#',
+    link: '/treatments',
   },
 ];
 
@@ -87,7 +87,7 @@ export default function FeaturedServices() {
         </div>
         <div className="text-center mt-12">
             <Button size="lg">
-                <Link href="#">Book a Consultation</Link>
+                <Link href="/treatments">View All Treatments</Link>
             </Button>
         </div>
       </div>
