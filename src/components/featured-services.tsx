@@ -52,33 +52,36 @@ export default function FeaturedServices() {
           {featuredServicesData.map((service) => {
             const image = getImage(service.imageId);
             return (
-              <Card key={service.name} className="overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-2 group flex flex-col bg-card">
-                <CardContent className="p-0">
-                  {image && (
-                      <div className="aspect-[4/3] overflow-hidden">
-                          <Image
-                          src={image.imageUrl}
-                          alt={image.description}
-                          width={600}
-                          height={450}
-                          data-ai-hint={image.imageHint}
-                          className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
-                          />
-                      </div>
-                  )}
-                </CardContent>
-                <CardHeader>
-                  <CardTitle className="font-headline text-xl group-hover:text-primary transition-colors duration-300">{service.name}</CardTitle>
-                </CardHeader>
-                <CardContent className="flex-grow flex flex-col justify-between">
-                  <p className="text-muted-foreground mb-6">{service.description}</p>
-                  <Button variant="outline" asChild className="w-full mt-auto">
-                      <Link href={service.link}>
-                          Learn More <ArrowRight className="ml-2 h-4 w-4" />
-                      </Link>
-                  </Button>
-                </CardContent>
-              </Card>
+              <div key={service.name} className="relative group/card overflow-hidden rounded-lg">
+                <div className="absolute -inset-0.5 bg-gradient-to-r from-primary via-accent to-secondary rounded-lg blur opacity-75 group-hover/card:opacity-100 transition duration-1000 group-hover/card:duration-200 animate-glowing-border"></div>
+                <Card className="relative overflow-hidden transition-all duration-300 group-hover/card:shadow-xl group-hover/card:-translate-y-2 group flex flex-col bg-card h-full">
+                  <CardContent className="p-0">
+                    {image && (
+                        <div className="aspect-[4/3] overflow-hidden">
+                            <Image
+                            src={image.imageUrl}
+                            alt={image.description}
+                            width={600}
+                            height={450}
+                            data-ai-hint={image.imageHint}
+                            className="object-cover w-full h-full transition-transform duration-500 group-hover/card:scale-110"
+                            />
+                        </div>
+                    )}
+                  </CardContent>
+                  <CardHeader>
+                    <CardTitle className="font-headline text-xl group-hover/card:text-primary transition-colors duration-300">{service.name}</CardTitle>
+                  </CardHeader>
+                  <CardContent className="flex-grow flex flex-col justify-between">
+                    <p className="text-muted-foreground mb-6">{service.description}</p>
+                    <Button variant="outline" asChild className="w-full mt-auto">
+                        <Link href={service.link}>
+                            Learn More <ArrowRight className="ml-2 h-4 w-4" />
+                        </Link>
+                    </Button>
+                  </CardContent>
+                </Card>
+              </div>
             );
           })}
         </div>

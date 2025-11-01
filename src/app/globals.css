@@ -90,4 +90,12 @@
     animation: blink-green 2.5s infinite;
     animation-delay: 5s;
   }
+  
+  @keyframes glowing-border {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  .animate-glowing-border {
+    animation: glowing-border 6s linear infinite;
+  }
 }
