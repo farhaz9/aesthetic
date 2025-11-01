@@ -53,8 +53,8 @@ export default function FeaturedServices() {
             const image = getImage(service.imageId);
             return (
               <div key={service.name} className="relative group/card overflow-hidden rounded-lg">
-                <div className="absolute -inset-0.5 bg-gradient-to-r from-primary via-accent to-secondary rounded-lg blur opacity-75 group-hover/card:opacity-100 transition duration-1000 group-hover/card:duration-200 animate-glowing-border"></div>
-                <Card className="relative overflow-hidden transition-all duration-300 group-hover/card:shadow-xl group-hover/card:-translate-y-2 group flex flex-col bg-card h-full">
+                <div className="absolute -inset-0.5 bg-gradient-to-r from-primary via-accent to-secondary rounded-lg opacity-75 group-hover/card:opacity-100 transition duration-1000 group-hover/card:duration-200 animate-glowing-border"></div>
+                <Card className="relative overflow-hidden transition-all duration-300 group-hover/card:shadow-xl group flex flex-col bg-card h-full">
                   <CardContent className="p-0">
                     {image && (
                         <div className="aspect-[4/3] overflow-hidden">
