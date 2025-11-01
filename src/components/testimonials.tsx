@@ -5,22 +5,22 @@ import { PlaceHolderImages, type ImagePlaceholder } from '@/lib/placeholder-imag
 
 const testimonialsData = [
   {
-    name: 'Sarah J.',
-    quote: "Adopting Buddy was the best decision we've ever made. The team at Paws & Claws were so helpful and made the process a breeze. Our family feels complete now!",
+    name: 'David L.',
+    quote: "The results from my hair transplant are incredible, far exceeding my expectations. The team was professional and caring throughout. I feel like I've turned back the clock 10 years!",
     avatarId: 'testimonial-avatar-1',
-    pet: 'Buddy, Golden Retriever'
+    procedure: 'FUE Hair Transplant'
   },
   {
-    name: 'Mike R.',
-    quote: "I was looking for a calm companion, and the staff pointed me to Luna. She's the sweetest cat. I'm so grateful for their guidance and for bringing this gentle soul into my life.",
+    name: 'Jessica M.',
+    quote: "I was nervous about getting fillers, but the practitioners at Follicle & Form were amazing. They listened to me and the result is so subtle and natural. I just look refreshed. Highly recommend!",
     avatarId: 'testimonial-avatar-2',
-    pet: 'Luna, Domestic Shorthair'
+    procedure: 'Cosmetic Injectables'
   },
   {
-    name: 'The Lee Family',
-    quote: "We adopted two bonded kittens, and it's been double the fun! The facility was so clean, and you can tell they really care about the animals. A wonderful experience from start to finish.",
+    name: 'Robert K.',
+    quote: "A fantastic experience from the initial consultation to the final follow-up. The professionalism and attention to detail are second to none. My confidence has skyrocketed.",
     avatarId: 'testimonial-avatar-3',
-    pet: 'Milo & Otis, Kittens'
+    procedure: 'Hairline Restoration'
   },
 ];
 
@@ -30,12 +30,12 @@ const getImage = (id: string): ImagePlaceholder | undefined => {
 
 export default function Testimonials() {
   return (
-    <section id="testimonials" className="bg-secondary">
+    <section id="testimonials" className="bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold">Happy Tails</h2>
+          <h2 className="text-3xl md:text-4xl font-bold">Success Stories</h2>
           <p className="text-lg text-muted-foreground mt-2 max-w-2xl mx-auto">
-            Real stories from families who found their furry friends through Paws & Claws.
+            Hear from our clients who have transformed their lives and regained their confidence.
           </p>
         </div>
         <Carousel
@@ -51,7 +51,7 @@ export default function Testimonials() {
                 return (
                     <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
                         <div className="p-2 h-full">
-                        <Card className="h-full flex flex-col">
+                        <Card className="h-full flex flex-col bg-secondary border-secondary">
                             <CardContent className="flex flex-col items-center text-center justify-center p-6 gap-4 flex-grow">
                               <p className="text-base italic text-muted-foreground">"{testimonial.quote}"</p>
                               <div className="flex items-center flex-col gap-2 mt-4">
@@ -61,7 +61,7 @@ export default function Testimonials() {
                                   </Avatar>
                                   <div>
                                     <p className="text-lg font-semibold font-headline text-primary">{testimonial.name}</p>
-                                    <p className="text-sm text-muted-foreground">{testimonial.pet}</p>
+                                    <p className="text-sm text-muted-foreground">{testimonial.procedure}</p>
                                   </div>
                               </div>
                             </CardContent>

@@ -1,64 +1,46 @@
 {
   "placeholderImages": [
     {
-      "id": "featured-dog-1",
-      "description": "A friendly looking golden retriever.",
-      "imageUrl": "https://images.unsplash.com/photo-1602241628512-459cdd3234fe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxnb2xkZW4lMjByZXRyaWV2ZXJ8ZW58MHx8fHwxNzYxOTYxNjU4fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "golden retriever"
+      "id": "service-hair-transplant",
+      "description": "A close-up of a hair transplant procedure.",
+      "imageUrl": "https://images.unsplash.com/photo-1580160946675-ec3d85716d88?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxoYWlyJTIwdHJhbnNwbGFudHxlbnwwfHx8fDE3NjE5MTIyOTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "hair transplant"
     },
     {
-      "id": "featured-cat-1",
-      "description": "A playful tabby cat.",
-      "imageUrl": "https://images.unsplash.com/photo-1613409442597-85a288fe0997?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHx0YWJieSUyMGNhdHxlbnwwfHx8fDE3NjE5MDUyODB8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "tabby cat"
+      "id": "service-injectables",
+      "description": "A clinician performing a cosmetic injection.",
+      "imageUrl": "https://images.unsplash.com/photo-1668874896975-7f874c90600a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Y29zbWV0aWMlMjBpbmplY3Rpb258ZW58MHx8fHwxNzYyMDAyMTk1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cosmetic injection"
     },
     {
-      "id": "featured-dog-2",
-      "description": "A small, fluffy poodle mix.",
-      "imageUrl": "https://images.unsplash.com/photo-1612793619652-66996dd8d67d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxwb29kbGUlMjBkb2d8ZW58MHx8fHwxNzYxOTgzMTAwfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "poodle dog"
+      "id": "service-skincare",
+      "description": "A person receiving a facial treatment.",
+      "imageUrl": "https://images.unsplash.com/photo-1713824096348-c1956e6da321?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxmYWNpYWwlMjB0cmVhdG1lbnR8ZW58MHx8fHwxNzYxOTg1MTQ4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "facial treatment"
     },
     {
-      "id": "featured-cat-2",
-      "description": "A majestic long-haired cat.",
-      "imageUrl": "https://images.unsplash.com/photo-1592652426689-4e4f12c4aef5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzaWFtZXNlJTIwY2F0fGVufDB8fHx8MTc2MTkwNjY3N3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "siamese cat"
-    },
-    {
-      "id": "how-it-works-1",
-      "description": "Illustration for finding a pet.",
-      "imageUrl": "https://images.unsplash.com/photo-1706426629246-2a3c3e3e3ff2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzZWFyY2glMjBpY29ufGVufDB8fHx8MTc2MTk4MzEwMHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "search icon"
-    },
-    {
-      "id": "how-it-works-2",
-      "description": "Illustration for meeting a pet.",
-      "imageUrl": "https://images.unsplash.com/photo-1634869258987-f13de2902431?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxoYW5kc2hha2UlMjBpY29ufGVufDB8fHx8MTc2MTk4MzEwMHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "handshake icon"
-    },
-    {
-      "id": "how-it-works-3",
-      "description": "Illustration for taking a pet home.",
-      "imageUrl": "https://images.unsplash.com/photo-1528962862197-29c4f24ccc04?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxob21lJTIwaWNvbnxlbnwwfHx8fDE3NjE5MjQwMDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "home icon"
+      "id": "service-body",
+      "description": "A non-invasive body contouring machine.",
+      "imageUrl": "https://images.unsplash.com/photo-1542850802-8a047a726d4e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Ym9keSUyMGNvbnRvdXJpbmd8ZW58MHx8fHwxNzYyMDAyMTk1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "body contouring"
     },
     {
       "id": "testimonial-avatar-1",
-      "description": "Avatar for a smiling woman.",
-      "imageUrl": "https://images.unsplash.com/photo-1719087358997-12957d0859e2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHx3b21hbiUyMHNtaWxpbmd8ZW58MHx8fHwxNzYxOTgwMjIyfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "woman smiling"
-    },
-    {
-      "id": "testimonial-avatar-2",
-      "description": "Avatar for a smiling man.",
-      "imageUrl": "https://images.unsplash.com/photo-1656337789708-cdf37b07112d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bWFuJTIwc21pbGluZ3xlbnwwfHx8fDE3NjE5MTE0OTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "description": "Avatar for a smiling man in his 40s.",
+      "imageUrl": "https://images.unsplash.com/photo-1562124638-724e13052daf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxtYW4lMjBzbWlsaW5nfGVufDB8fHx8MTc2MTkxMTQ5NHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "man smiling"
     },
     {
+      "id": "testimonial-avatar-2",
+      "description": "Avatar for a smiling woman in her 30s.",
+      "imageUrl": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx3b21hbiUyMHNtaWxpbmd8ZW58MHx8fHwxNzYxOTgwMjIyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "woman smiling"
+    },
+    {
       "id": "testimonial-avatar-3",
-      "description": "Avatar for a smiling family.",
-      "imageUrl": "https://images.unsplash.com/photo-1542037104857-ffbb0b9155fb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxoYXBweSUyMGZhbWlseXxlbnwwfHx8fDE3NjE5MjMzOTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "happy family"
+      "description": "Avatar for a happy man in his 50s.",
+      "imageUrl": "https://images.unsplash.com/photo-1562124638-724e13052daf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtYW4lMjBoYXBweXxlbnwwfHx8fDE3NjIwMDIxOTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "man happy"
     }
   ]
 }
