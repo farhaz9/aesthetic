@@ -4,10 +4,10 @@ import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Menu, MessageCircle } from 'lucide-react';
 
 const navLinks = [
-  { href: '/treatments', label: 'Treatments' },
-  { href: '/#appointment', label: 'Appointment' },
+  { href: '/treatments', label: 'Solutions' },
+  { href: '/#appointment', label: 'Book Visit' },
   { href: '/contact', label: 'Contact' },
-  { href: 'https://wa.me/13105550101', label: 'WhatsApp' },
+  { href: 'https://wa.me/919876543210', label: 'WhatsApp' },
 ];
 
 const IconPlaceholder = () => (
@@ -26,7 +26,7 @@ export default function Header() {
         <div className="mr-4 flex items-center">
           <Link href="/" className="mr-6 flex items-center space-x-2">
             <IconPlaceholder />
-            <span className="font-bold font-headline text-xl">Follicle & Form</span>
+            <span className="font-bold font-headline text-xl">ElysiarCrown</span>
           </Link>
           <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
             {navLinks.map(link => (
@@ -55,7 +55,7 @@ export default function Header() {
                 <div className="grid gap-4 py-4">
                     <Link href="/" className="flex items-center space-x-2">
                         <IconPlaceholder />
-                        <span className="font-bold font-headline text-xl">Follicle & Form</span>
+                        <span className="font-bold font-headline text-xl">ElysiarCrown</span>
                     </Link>
                     <nav className="grid gap-2">
                         {navLinks.map(link => (

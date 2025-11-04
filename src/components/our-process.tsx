@@ -4,18 +4,18 @@ export default function OurProcess() {
 
 const steps = [
   {
-    title: '1. Consultation',
-    description: "Your journey begins with a private consultation to discuss your goals and assess your needs with our expert team.",
+    title: '1. At-Home Consultation',
+    description: "Book a private consultation. Our experts visit you in Delhi to discuss your goals and assess your hair loss discreetly.",
     icon: <Calendar className="w-10 h-10 text-primary" />,
   },
   {
     title: '2. Personalized Plan',
-    description: "We create a tailored treatment plan using the latest technology and techniques to achieve your desired, natural-looking results.",
+    description: "We create a tailored treatment plan—be it FUE, DHI, or a custom hair patch—to achieve your desired, natural-looking results.",
     icon: <UserCheck className="w-10 h-10 text-primary" />,
   },
   {
-    title: '3. Treatment & Care',
-    description: "Receive expert care during your procedure in our state-of-the-art facility, followed by comprehensive aftercare support.",
+    title: '3. At-Home Procedure',
+    description: "Receive expert care in the comfort and privacy of your own home, followed by comprehensive aftercare support from our team.",
     icon: <Microscope className="w-10 h-10 text-primary" />,
   },
 ]
@@ -24,9 +24,9 @@ const steps = [
     <section id="about" className="bg-secondary">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold">Your Journey to Renewal</h2>
+          <h2 className="text-3xl md:text-4xl font-bold">Your Journey to a Fuller Crown</h2>
           <p className="text-lg text-muted-foreground mt-2 max-w-3xl mx-auto">
-            We guide you through a seamless and supportive process, ensuring comfort and confidence from start to finish.
+            Our process is designed for your ultimate comfort and privacy, delivering world-class results at your home in Delhi.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">

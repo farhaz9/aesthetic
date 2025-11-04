@@ -8,26 +8,26 @@ import { ArrowRight } from 'lucide-react';
 
 const featuredServicesData = [
   {
-    name: 'FUE Hair Transplant',
-    description: 'Minimally invasive follicular unit extraction for natural, permanent results.',
+    name: 'Painless FUE Hair Transplant',
+    description: 'Our cutting-edge FUE technique ensures natural, dense results with minimal downtime, all performed by leading surgeons in Delhi.',
     imageId: 'service-hair-transplant',
     link: '/treatments',
   },
   {
-    name: 'Cosmetic Injectables',
-    description: 'Reduce fine lines and restore volume with our range of dermal fillers.',
+    name: 'Custom Hair Patch Solutions',
+    description: 'Get a seamless, non-surgical hair patch made from 100% human hair for an undetectable, confident look.',
     imageId: 'service-injectables',
     link: '/treatments',
   },
   {
-    name: 'Advanced Skincare',
-    description: 'Revitalize your skin with medical-grade facials and laser treatments.',
+    name: 'Direct Hair Implantation (DHI)',
+    description: 'The most advanced method for maximum density and perfectly natural hairlines, performed in the privacy of your home.',
     imageId: 'service-skincare',
     link: '/treatments',
   },
   {
-    name: 'Body Contouring',
-    description: 'Non-surgical solutions to shape and sculpt your body with lasting results.',
+    name: 'PRP & GFC Therapy',
+    description: 'Stimulate natural hair growth and strengthen existing hair with our advanced, non-surgical therapies, available at home.',
     imageId: 'service-body',
     link: '/treatments',
   },
@@ -43,9 +43,9 @@ export default function FeaturedServices() {
       <div className="absolute inset-0 -z-0 bg-gradient-radial from-amber-100/50 to-transparent to-70% pointer-events-none" />
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold">Services</h2>
+          <h2 className="text-3xl md:text-4xl font-bold">Our Premier At-Home Services</h2>
           <p className="text-lg text-muted-foreground mt-2 max-w-3xl mx-auto">
-            We combine artistry with medical science to deliver exceptional, personalized results. Explore our most sought-after treatments.
+            We deliver Delhi's best hair restoration expertise right to your doorstep, ensuring privacy, comfort, and exceptional results.
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -87,7 +87,7 @@ export default function FeaturedServices() {
         </div>
         <div className="text-center mt-12">
             <Button size="lg">
-                <Link href="/treatments">View All Treatments</Link>
+                <Link href="/treatments">View All Solutions</Link>
             </Button>
         </div>
       </div>

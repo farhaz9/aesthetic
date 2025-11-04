@@ -41,8 +41,8 @@ export default function AppointmentForm() {
     function onSubmit(values: z.infer<typeof formSchema>) {
         console.log(values);
         toast({
-            title: "Appointment Request Sent!",
-            description: `Thank you, ${values.name}. We will contact you shortly to confirm your consultation.`,
+            title: "Consultation Request Sent!",
+            description: `Thank you, ${values.name}. We will contact you shortly to confirm your at-home consultation.`,
         });
         form.reset();
     }
@@ -55,9 +55,9 @@ export default function AppointmentForm() {
                         <div className="mx-auto bg-primary/10 rounded-full p-4 flex items-center justify-center w-fit mb-4">
                            <CalendarCheck className="w-10 h-10 text-primary" />
                         </div>
-                        <CardTitle className="text-3xl md:text-4xl font-bold">Book Your Consultation</CardTitle>
+                        <CardTitle className="text-3xl md:text-4xl font-bold">Book Your At-Home Consultation</CardTitle>
                         <CardDescription className="text-lg text-muted-foreground mt-2">
-                            Take the first step towards renewed confidence. Fill out the form below to request your private consultation.
+                            Take the first step towards your transformation. Fill out the form to schedule a private, confidential consultation at your home in Delhi.
                         </CardDescription>
                     </CardHeader>
                     <CardContent>
@@ -97,7 +97,7 @@ export default function AppointmentForm() {
                                             <FormItem>
                                                 <FormLabel>Phone Number</FormLabel>
                                                 <FormControl>
-                                                    <Input placeholder="(555) 123-4567" {...field} />
+                                                    <Input placeholder="+91 98765 43210" {...field} />
                                                 </FormControl>
                                                 <FormMessage />
                                             </FormItem>
@@ -123,10 +123,10 @@ export default function AppointmentForm() {
                                     name="message"
                                     render={({ field }) => (
                                         <FormItem>
-                                            <FormLabel>Message (Optional)</FormLabel>
+                                            <FormLabel>Your Address & Message (Optional)</FormLabel>
                                             <FormControl>
                                                 <Textarea
-                                                    placeholder="Tell us anything else you'd like us to know."
+                                                    placeholder="Please provide your address for the at-home visit and any other details."
                                                     className="resize-none"
                                                     {...field}
                                                 />

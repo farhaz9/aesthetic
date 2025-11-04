@@ -19,11 +19,11 @@ const WhatsAppIcon = ({ className }: { className?: string }) => (
 );
 
 const navLinks = [
-  { href: '/treatments', label: 'Treatments', icon: Stethoscope },
-  { href: '/#appointment', label: 'Appointment', icon: CalendarCheck },
+  { href: '/treatments', label: 'Solutions', icon: Stethoscope },
+  { href: '/#appointment', label: 'Book Visit', icon: CalendarCheck },
   { href: '/', label: 'Home', icon: Home },
   { href: '/contact', label: 'Contact', icon: Phone },
-  { href: 'https://wa.me/13105550101', label: 'WhatsApp', icon: WhatsAppIcon },
+  { href: 'https://wa.me/919876543210', label: 'WhatsApp', icon: WhatsAppIcon },
 ];
 
 export default function BottomNav() {

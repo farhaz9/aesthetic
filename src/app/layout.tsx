@@ -7,8 +7,8 @@ import { Toaster } from "@/components/ui/toaster";
 import Preloader from '@/components/preloader';
 
 // export const metadata: Metadata = {
-//   title: 'Follicle & Form | Hair & Cosmetic Clinic',
-//   description: 'Advanced solutions for hair restoration and cosmetic enhancement.',
+//   title: 'ElysiarCrown | At-Home Hair Transplant & Patch in Delhi',
+//   description: 'Delhi's leading at-home service for premium hair transplant and custom hair patch solutions.',
 // };
 
 export default function RootLayout({
@@ -30,8 +30,8 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <title>Follicle & Form | Hair & Cosmetic Clinic</title>
-        <meta name="description" content="Advanced solutions for hair restoration and cosmetic enhancement." />
+        <title>ElysiarCrown | At-Home Hair Transplant & Patch in Delhi</title>
+        <meta name="description" content="Delhi's leading at-home service for premium hair transplant and custom hair patch solutions." />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lora:wght@700&display=swap" rel="stylesheet" />

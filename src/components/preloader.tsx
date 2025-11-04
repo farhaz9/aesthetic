@@ -29,7 +29,7 @@ export default function Preloader() {
     )}>
         <div className="flex flex-col items-center gap-4">
             <PreloaderIcon />
-            <p className="font-headline text-lg text-primary animate-pulse">Follicle & Form</p>
+            <p className="font-headline text-lg text-primary animate-pulse">ElysiarCrown</p>
         </div>
     </div>
   );

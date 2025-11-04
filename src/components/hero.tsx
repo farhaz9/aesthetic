@@ -9,7 +9,7 @@ export default function Hero() {
        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-black/30 z-10" />
        <Image
           src="https://images-five-gilt.vercel.app/1759649928.png"
-          alt="A modern and clean clinic interior"
+          alt="A discreet and professional at-home hair transplant setup"
           fill
           className="object-cover"
           priority
@@ -18,19 +18,19 @@ export default function Hero() {
       <div className="container relative z-20 mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-8 px-4">
         <div className="text-center md:text-left text-white">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight">
-            Rediscover Your
+            Your Crown, Reimagined.
             <br />
-            <span className="text-accent">Natural Confidence</span>
+            <span className="text-accent">At Home in Delhi.</span>
           </h1>
           <p className="mt-4 max-w-xl mx-auto md:mx-0 text-lg md:text-xl text-white/90">
-            State-of-the-art solutions in hair restoration and cosmetic enhancement, tailored to your unique goals.
+            Experience Delhi's finest hair transplant and hair patch solutions, delivered with discretion and expertise in the comfort of your own home.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row justify-center md:justify-start gap-4">
             <Button size="lg" asChild className="w-full sm:w-auto">
-              <Link href="/treatments">Explore Services</Link>
+              <Link href="/treatments">Our Solutions</Link>
             </Button>
             <Button size="lg" variant="outline" className="bg-transparent text-white border-white hover:bg-white hover:text-black w-full sm:w-auto">
-              <Link href="/#appointment">Book a Consultation</Link>
+              <Link href="/#appointment">Book At-Home Visit</Link>
             </Button>
           </div>
         </div>

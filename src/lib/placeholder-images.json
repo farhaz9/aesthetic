@@ -8,39 +8,39 @@
     },
     {
       "id": "service-injectables",
-      "description": "A clinician performing a cosmetic injection.",
-      "imageUrl": "https://images.unsplash.com/photo-1668874896975-7f874c90600a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Y29zbWV0aWMlMjBpbmplY3Rpb258ZW58MHx8fHwxNzYyMDAyMTk1fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "cosmetic injection"
+      "description": "A technician holding a custom hair patch.",
+      "imageUrl": "https://images.unsplash.com/photo-1588527962980-72746d95973e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxoYWlyJTIwcGF0Y2h8ZW58MHx8fHwxNzYyMjQwNTgwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "hair patch"
     },
     {
       "id": "service-skincare",
-      "description": "A person receiving a facial treatment.",
-      "imageUrl": "https://images.unsplash.com/photo-1713824096348-c1956e6da321?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxmYWNpYWwlMjB0cmVhdG1lbnR8ZW58MHx8fHwxNzYxOTg1MTQ4fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "facial treatment"
+      "description": "A detailed view of a DHI hair transplant pen.",
+      "imageUrl": "https://images.unsplash.com/photo-1745084663278-7a06cadb7ca0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxESEklMjB0cmFuc3BsYW50fGVufDB8fHx8MTc2MjI0MDU4MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "DHI transplant"
     },
     {
       "id": "service-body",
-      "description": "A non-invasive body contouring machine.",
-      "imageUrl": "https://images.unsplash.com/photo-1542850802-8a047a726d4e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Ym9keSUyMGNvbnRvdXJpbmd8ZW58MHx8fHwxNzYyMDAyMTk1fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "body contouring"
+      "description": "A vial used for PRP or GFC therapy.",
+      "imageUrl": "https://images.unsplash.com/photo-1631589312868-80519302636a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxQUlAlMjB2aWFsfGVufDB8fHx8MTc2MjA4NTkzN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "PRP therapy"
     },
     {
       "id": "testimonial-avatar-1",
-      "description": "Avatar for a smiling man in his 40s.",
-      "imageUrl": "https://images.unsplash.com/photo-1562124638-724e13052daf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxtYW4lMjBzbWlsaW5nfGVufDB8fHx8MTc2MTkxMTQ5NHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "man smiling"
+      "description": "Avatar for a smiling man from Delhi in his 40s.",
+      "imageUrl": "https://images.unsplash.com/photo-1562124638-724e13052daf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxpbmRpYW4lMjBtYW4lMjBzbWlsaW5nfGVufDB8fHx8MTc2MjA4NjAwMHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "indian man"
     },
     {
       "id": "testimonial-avatar-2",
-      "description": "Avatar for a smiling woman in her 30s.",
-      "imageUrl": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx3b21hbiUyMHNtaWxpbmd8ZW58MHx8fHwxNzYxOTgwMjIyfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "woman smiling"
+      "description": "Avatar for a smiling woman from Delhi in her 30s.",
+      "imageUrl": "https://images.unsplash.com/photo-1598966743931-a773e3a9ba3f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzbWlsaW5nJTIwaW5kaWFuJTIwd29tYW58ZW58MHx8fHwxNzYyMDg2MDAwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "indian woman"
     },
     {
       "id": "testimonial-avatar-3",
-      "description": "Avatar for a happy man in his 50s.",
-      "imageUrl": "https://images.unsplash.com/photo-1562124638-724e13052daf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtYW4lMjBoYXBweXxlbnwwfHx8fDE3NjIwMDIxOTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "man happy"
+      "description": "Avatar for a happy man from Delhi in his 50s.",
+      "imageUrl": "https://images.unsplash.com/photo-1615712797233-526e03803b33?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxvbGRlciUyMGluZGlhbiUyMG1hbnxlbnwwfHx8fDE3NjIwODYwMDB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "older indian"
     }
   ]
 }

@@ -5,22 +5,22 @@ import { PlaceHolderImages, type ImagePlaceholder } from '@/lib/placeholder-imag
 
 const testimonialsData = [
   {
-    name: 'David L.',
-    quote: "The results from my hair transplant are incredible, far exceeding my expectations. The team was professional and caring throughout. I feel like I've turned back the clock 10 years!",
+    name: 'Amit S.',
+    quote: "The at-home service was a game-changer. The professionalism was top-notch, and the hair transplant results are better than I ever imagined. ElysiarCrown is truly the best in Delhi.",
     avatarId: 'testimonial-avatar-1',
-    procedure: 'FUE Hair Transplant'
+    procedure: 'FUE Hair Transplant at Home'
   },
   {
-    name: 'Jessica M.',
-    quote: "I was nervous about getting fillers, but the practitioners at Follicle & Form were amazing. They listened to me and the result is so subtle and natural. I just look refreshed. Highly recommend!",
+    name: 'Priya V.',
+    quote: "I was hesitant about a hair patch, but the team made me so comfortable. The process was discreet, and my new hair looks completely natural. My confidence is through the roof!",
     avatarId: 'testimonial-avatar-2',
-    procedure: 'Cosmetic Injectables'
+    procedure: 'Custom Hair Patch'
   },
   {
-    name: 'Robert K.',
-    quote: "A fantastic experience from the initial consultation to the final follow-up. The professionalism and attention to detail are second to none. My confidence has skyrocketed.",
+    name: 'Rajesh K.',
+    quote: "Incredible experience from start to finish. Having the procedure at home made it so much less stressful. The attention to detail and care from the team was exceptional. Highly recommended!",
     avatarId: 'testimonial-avatar-3',
-    procedure: 'Hairline Restoration'
+    procedure: 'DHI Hair Transplant at Home'
   },
 ];
 
@@ -33,9 +33,9 @@ export default function Testimonials() {
     <section id="testimonials" className="bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold">Success Stories</h2>
+          <h2 className="text-3xl md:text-4xl font-bold">Success Stories from Delhi</h2>
           <p className="text-lg text-muted-foreground mt-2 max-w-2xl mx-auto">
-            Hear from our clients who have transformed their lives and regained their confidence.
+            Hear from our clients who transformed their look and confidence with our discreet at-home services.
           </p>
         </div>
         <Carousel

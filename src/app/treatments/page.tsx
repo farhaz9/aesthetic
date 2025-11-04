@@ -12,26 +12,26 @@ import { PlaceHolderImages, type ImagePlaceholder } from '@/lib/placeholder-imag
 
 const featuredServicesData = [
   {
-    name: 'FUE Hair Transplant',
-    description: 'Minimally invasive follicular unit extraction for natural, permanent results. Our advanced FUE technique ensures minimal scarring and maximum density.',
+    name: 'Painless FUE Hair Transplant',
+    description: 'Our cutting-edge Follicular Unit Extraction (FUE) technique ensures natural, dense results with minimal downtime. The entire procedure is performed by Delhi’s leading surgeons in the comfort and privacy of your home.',
     imageId: 'service-hair-transplant',
     link: '#',
   },
   {
-    name: 'Cosmetic Injectables',
-    description: 'Reduce fine lines and restore volume with our range of premium dermal fillers and neurotoxins, administered by expert practitioners for a refreshed, youthful look.',
+    name: 'Custom Hair Patch Solutions',
+    description: 'Get a seamless, non-surgical hair patch made from 100% human hair. Our experts visit you to ensure a perfect match for your hair type, color, and style, delivering an undetectable and confident look.',
     imageId: 'service-injectables',
     link: '#',
   },
   {
-    name: 'Advanced Skincare',
-    description: 'Revitalize your skin with medical-grade facials, chemical peels, and laser treatments designed to address concerns like acne, aging, and pigmentation.',
+    name: 'Direct Hair Implantation (DHI)',
+    description: 'Experience the next generation of hair restoration. DHI offers maximum follicle viability and precise control over hair direction for the most natural-looking hairline, all performed at your home.',
     imageId: 'service-skincare',
     link: '#',
   },
   {
-    name: 'Body Contouring',
-    description: 'Non-surgical solutions to shape and sculpt your body. Our state-of-the-art technology helps you achieve your desired physique with lasting results and no downtime.',
+    name: 'PRP & GFC Therapy',
+    description: 'Stimulate natural hair growth and strengthen your follicles with Platelet-Rich Plasma (PRP) and Growth Factor Concentrate (GFC) therapies. A non-surgical boost for healthier, thicker hair, available at home.',
     imageId: 'service-body',
     link: '#',
   },
@@ -49,9 +49,9 @@ export default function TreatmentsPage() {
         <section className="py-12 md:py-24 lg:py-32">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
-              <h1 className="text-4xl md:text-5xl font-bold font-headline">Our Treatments</h1>
+              <h1 className="text-4xl md:text-5xl font-bold font-headline">Our At-Home Solutions</h1>
               <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">
-                Discover a comprehensive range of services combining artistry with medical science to deliver exceptional, personalized results.
+                ElysiarCrown brings world-class hair restoration and non-surgical solutions right to your doorstep in Delhi.
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -76,7 +76,7 @@ export default function TreatmentsPage() {
                       <p className="text-muted-foreground mb-4">{service.description}</p>
                       <Button variant="default" asChild className="w-full md:w-auto mt-auto self-start">
                         <Link href="/#appointment">
-                          Book a Consultation <ArrowRight className="ml-2 h-4 w-4" />
+                          Book At-Home Visit <ArrowRight className="ml-2 h-4 w-4" />
                         </Link>
                       </Button>
                     </div>

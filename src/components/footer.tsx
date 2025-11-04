@@ -21,10 +21,10 @@ export default function Footer() {
           <div className="md:col-span-2 lg:col-span-1">
              <Link href="/" className="flex items-center space-x-2 mb-4">
               <IconPlaceholder />
-              <span className="font-bold font-headline text-2xl">Follicle & Form</span>
+              <span className="font-bold font-headline text-2xl">ElysiarCrown</span>
             </Link>
             <p className="text-muted-foreground pr-4">
-              Your journey to confidence starts here. Contact us today to book your private consultation.
+             Delhi's premier at-home hair restoration service. Book your confidential consultation today.
             </p>
              <div className="flex mt-4 space-x-4">
               <Link href="#" className="text-muted-foreground hover:text-primary"><Facebook /></Link>
@@ -48,10 +48,10 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-headline font-semibold mb-4">Contact Info</h3>
             <ul className="space-y-2 text-muted-foreground">
-                <li>123 Beauty Lane, Suite 100</li>
-                <li>Beverly Hills, CA 90210</li>
-                <li>Email: contact@follicleform.com</li>
-                <li>Phone: (310) 555-0101</li>
+                <li>Serving Delhi & NCR</li>
+                <li>At-Home Consultations</li>
+                <li>Email: contact@elysiarcrown.com</li>
+                <li>Phone: +91 98765 43210</li>
             </ul>
           </div>
 
@@ -59,21 +59,21 @@ export default function Footer() {
           <div className="md:col-span-2 lg:col-span-1">
              <div className="overflow-hidden rounded-lg h-full w-full">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.599723223122!2d-118.40139138478052!3d34.07362098060499!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bc04d6d1d7b1%3A0x46a6f1925355a297!2sRodeo%20Dr%2C%20Beverly%20Hills%2C%20CA%2090210!5e0!3m2!1sen!2sus!4v1678886 Rodeo Dr"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224346.5204443912!2d77.06889833534504!3d28.52725273574068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x52c2b7494e204dce!2sNew%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1683886_New_Delhi_Map"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
                     allowFullScreen={false}
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
-                    title="Clinic Location"
+                    title="Service Area - Delhi"
                 ></iframe>
             </div>
           </div>
 
         </div>
         <div className="mt-8 pt-8 border-t text-center text-muted-foreground">
-          <p>&copy; {year} Follicle & Form. All Rights Reserved.</p>
+          <p>&copy; {year} ElysiarCrown. All Rights Reserved.</p>
         </div>
       </div>
     </footer>
