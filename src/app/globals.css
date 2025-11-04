@@ -10,7 +10,7 @@
     --card-foreground: 24 9.8% 10%;
     --popover: 0 0% 100%;
     --popover-foreground: 24 9.8% 10%;
-    --primary: 45 95% 51%; /* Gold */
+    --primary: 45 65% 51%; /* Gold from Logo */
     --primary-foreground: 0 0% 98%;
     --secondary: 40 50% 96%; /* Light Cream */
     --secondary-foreground: 24 9.8% 10%;
@@ -37,7 +37,7 @@
     --card-foreground: 0 0% 98%;
     --popover: 24 9.8% 10%;
     --popover-foreground: 0 0% 98%;
-    --primary: 45 95% 51%;
+    --primary: 45 65% 51%;
     --primary-foreground: 0- 0% 98%;
     --secondary: 12 6.5% 15.1%;
     --secondary-foreground: 0 0% 98%;
