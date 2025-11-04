@@ -20,12 +20,6 @@ const featuredServicesData = [
     link: '/treatments',
   },
   {
-    name: 'Direct Hair Implantation (DHI)',
-    description: 'The most advanced method for maximum density and perfectly natural hairlines, performed in the privacy of your home.',
-    imageId: 'service-skincare',
-    link: '/treatments',
-  },
-  {
     name: 'PRP & GFC Therapy',
     description: 'Stimulate natural hair growth and strengthen existing hair with our advanced, non-surgical therapies, available at home.',
     imageId: 'service-body',
@@ -48,7 +42,7 @@ export default function FeaturedServices() {
             We deliver Delhi's best hair restoration expertise right to your doorstep, ensuring privacy, comfort, and exceptional results.
           </p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {featuredServicesData.map((service) => {
             const image = getImage(service.imageId);
             return (

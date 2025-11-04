@@ -24,12 +24,6 @@ const featuredServicesData = [
     link: '#',
   },
   {
-    name: 'Direct Hair Implantation (DHI)',
-    description: 'Experience the next generation of hair restoration. DHI offers maximum follicle viability and precise control over hair direction for the most natural-looking hairline, all performed at your home.',
-    imageId: 'service-skincare',
-    link: '#',
-  },
-  {
     name: 'PRP & GFC Therapy',
     description: 'Stimulate natural hair growth and strengthen your follicles with Platelet-Rich Plasma (PRP) and Growth Factor Concentrate (GFC) therapies. A non-surgical boost for healthier, thicker hair, available at home.',
     imageId: 'service-body',
