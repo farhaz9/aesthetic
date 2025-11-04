@@ -1,7 +1,9 @@
+'use client';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
-import { Menu, MessageCircle } from 'lucide-react';
+import { Menu } from 'lucide-react';
 
 const navLinks = [
   { href: '/treatments', label: 'Solutions' },
@@ -10,22 +12,19 @@ const navLinks = [
   { href: 'https://wa.me/919876543210', label: 'WhatsApp' },
 ];
 
-const IconPlaceholder = () => (
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-8 w-8 text-primary">
-        <path d="M9 3l-2 10M15 3l2 10" />
-        <path d="M12 13a4 4 0 0 0-4 4h8a4 4 0 0 0-4-4v0Z" />
-        <path d="M8 21a2 2 0 0 0 2-2" />
-        <path d="M16 21a2 2 0 0 1-2-2" />
-    </svg>
-)
-
 export default function Header() {
   return (
     <header className="sticky top-0 z-40 w-full border-b bg-background">
       <div className="container flex h-16 items-center">
         <div className="mr-4 flex items-center">
           <Link href="/" className="mr-6 flex items-center space-x-2">
-            <IconPlaceholder />
+            <Image 
+              src="https://images-five-gilt.vercel.app/elysier%20logo.png" 
+              alt="ElysiarCrown Logo" 
+              width={40} 
+              height={40} 
+              className="h-10 w-10"
+            />
             <span className="font-bold font-headline text-xl">ElysiarCrown</span>
           </Link>
           <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
@@ -54,7 +53,13 @@ export default function Header() {
             <SheetContent side="left">
                 <div className="grid gap-4 py-4">
                     <Link href="/" className="flex items-center space-x-2">
-                        <IconPlaceholder />
+                        <Image 
+                          src="https://images-five-gilt.vercel.app/elysier%20logo.png" 
+                          alt="ElysiarCrown Logo" 
+                          width={40} 
+                          height={40} 
+                          className="h-10 w-10"
+                        />
                         <span className="font-bold font-headline text-xl">ElysiarCrown</span>
                     </Link>
                     <nav className="grid gap-2">

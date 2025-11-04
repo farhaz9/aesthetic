@@ -1,14 +1,6 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { Facebook, Instagram, Twitter } from 'lucide-react';
-
-const IconPlaceholder = () => (
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-8 w-8 text-primary">
-        <path d="M9 3l-2 10M15 3l2 10" />
-        <path d="M12 13a4 4 0 0 0-4 4h8a4 4 0 0 0-4-4v0Z" />
-        <path d="M8 21a2 2 0 0 0 2-2" />
-        <path d="M16 21a2 2 0 0 1-2-2" />
-    </svg>
-)
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -20,7 +12,13 @@ export default function Footer() {
           {/* About */}
           <div className="md:col-span-2 lg:col-span-1">
              <Link href="/" className="flex items-center space-x-2 mb-4">
-              <IconPlaceholder />
+              <Image 
+                src="https://images-five-gilt.vercel.app/elysier%20logo.png" 
+                alt="ElysiarCrown Logo" 
+                width={40} 
+                height={40} 
+                className="h-10 w-10"
+              />
               <span className="font-bold font-headline text-2xl">ElysiarCrown</span>
             </Link>
             <p className="text-muted-foreground pr-4">
