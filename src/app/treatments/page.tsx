@@ -12,15 +12,15 @@ import { PlaceHolderImages, type ImagePlaceholder } from '@/lib/placeholder-imag
 
 const featuredServicesData = [
   {
-    name: 'Painless FUE Hair Transplant',
-    description: 'Our cutting-edge Follicular Unit Extraction (FUE) technique ensures natural, dense results with minimal downtime. The entire procedure is performed by Delhi’s leading surgeons in the comfort and privacy of your home.',
-    imageId: 'service-hair-transplant',
-    link: '#',
-  },
-  {
     name: 'Custom Hair Patch Solutions',
     description: 'Get a seamless, non-surgical hair patch made from 100% human hair. Our experts visit you to ensure a perfect match for your hair type, color, and style, delivering an undetectable and confident look.',
     imageId: 'service-injectables',
+    link: '#',
+  },
+  {
+    name: 'Painless FUE Hair Transplant',
+    description: 'Our cutting-edge Follicular Unit Extraction (FUE) technique ensures natural, dense results with minimal downtime. The entire procedure is performed by Delhi’s leading surgeons in the comfort and privacy of your home.',
+    imageId: 'service-hair-transplant',
     link: '#',
   },
   {

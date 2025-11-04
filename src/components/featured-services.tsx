@@ -8,15 +8,15 @@ import { ArrowRight } from 'lucide-react';
 
 const featuredServicesData = [
   {
-    name: 'Painless FUE Hair Transplant',
-    description: 'Our cutting-edge FUE technique ensures natural, dense results with minimal downtime, all performed by leading surgeons in Delhi.',
-    imageId: 'service-hair-transplant',
-    link: '/treatments',
-  },
-  {
     name: 'Custom Hair Patch Solutions',
     description: 'Get a seamless, non-surgical hair patch made from 100% human hair for an undetectable, confident look.',
     imageId: 'service-injectables',
+    link: '/treatments',
+  },
+  {
+    name: 'Painless FUE Hair Transplant',
+    description: 'Our cutting-edge FUE technique ensures natural, dense results with minimal downtime, all performed by leading surgeons in Delhi.',
+    imageId: 'service-hair-transplant',
     link: '/treatments',
   },
   {
