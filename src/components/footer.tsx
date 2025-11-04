@@ -48,8 +48,8 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-headline font-semibold mb-4">Contact Info</h3>
             <ul className="space-y-2 text-muted-foreground">
-                <li>Serving Delhi & NCR</li>
-                <li>At-Home Consultations</li>
+                <li className="max-w-xs">C-46, Vijay Vihar Phase II, Avantika, Sector 1, Rohini, New Delhi, 110085</li>
+                <li className="font-medium">At-Home Services across Delhi & NCR</li>
                 <li>Email: contact@elysiarcrown.com</li>
                 <li>Phone: +91 98765 43210</li>
             </ul>
@@ -57,16 +57,16 @@ export default function Footer() {
 
           {/* Map */}
           <div className="md:col-span-2 lg:col-span-1">
-             <div className="overflow-hidden rounded-lg h-full w-full">
+             <div className="overflow-hidden rounded-lg h-full w-full min-h-[200px]">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224346.5204443912!2d77.06889833534504!3d28.52725273574068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x52c2b7494e204dce!2sNew%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1683886_New_Delhi_Map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3498.411641088613!2d77.10619147550517!3d28.73693897560866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d01248695f24d%3A0x8e8334a1a3e8113e!2sC-46%2C%20Vijay%20Vihar%20II%2C%20Pocket%202%2C%20Sector%201%2C%20Rohini%2C%20New%20Delhi%2C%20Delhi%20110085!5e0!3m2!1sen!2sin!4v1720521199313!5m2!1sen!2sin"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
                     allowFullScreen={false}
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
-                    title="Service Area - Delhi"
+                    title="ElysiarCrown Address"
                 ></iframe>
             </div>
           </div>
