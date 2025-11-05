@@ -37,7 +37,7 @@ export default function FeaturedServices() {
       <div className="absolute inset-0 -z-0 bg-gradient-radial from-amber-100/50 to-transparent to-70% pointer-events-none" />
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold">Our Premier At-Home Services</h2>
+          <h2 className="text-3xl md:text-4xl font-bold">Services</h2>
           <p className="text-lg text-muted-foreground mt-2 max-w-3xl mx-auto">
             We deliver Delhi's best hair restoration expertise right to your doorstep, ensuring privacy, comfort, and exceptional results.
           </p>
