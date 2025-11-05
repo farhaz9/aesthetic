@@ -23,7 +23,7 @@ const navLinks = [
   { href: '/#appointment', label: 'Book Appt.', icon: CalendarPlus },
   { href: '/', label: 'Home', icon: Home },
   { href: '/contact', label: 'Contact', icon: Phone },
-  { href: 'https://wa.me/919876543210', label: 'WhatsApp', icon: WhatsAppIcon },
+  { href: 'https://wa.me/919999092516', label: 'WhatsApp', icon: WhatsAppIcon },
 ];
 
 export default function BottomNav() {

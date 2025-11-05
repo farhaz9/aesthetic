@@ -9,7 +9,7 @@ const navLinks = [
   { href: '/treatments', label: 'Treatments' },
   { href: '/#appointment', label: 'Book Visit' },
   { href: '/contact', label: 'Contact' },
-  { href: 'https://wa.me/919876543210', label: 'WhatsApp' },
+  { href: 'https://wa.me/919999092516', label: 'WhatsApp' },
 ];
 
 export default function Header() {

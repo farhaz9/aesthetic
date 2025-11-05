@@ -49,7 +49,7 @@ export default function Footer() {
                 <li className="max-w-xs">C-46, Vijay Vihar Phase II, Avantika, Sector 1, Rohini, New Delhi, 110085</li>
                 <li className="font-medium">At-Home Services across Delhi & NCR</li>
                 <li>Email: contact@elysiarcrown.com</li>
-                <li>Phone: +91 98765 43210</li>
+                <li>Phone: +91 9999092516</li>
             </ul>
           </div>
 

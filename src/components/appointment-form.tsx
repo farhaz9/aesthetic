@@ -97,7 +97,7 @@ export default function AppointmentForm() {
                                             <FormItem>
                                                 <FormLabel>Phone Number</FormLabel>
                                                 <FormControl>
-                                                    <Input placeholder="+91 98765 43210" {...field} />
+                                                    <Input placeholder="+91 9999092516" {...field} />
                                                 </FormControl>
                                                 <FormMessage />
                                             </FormItem>
