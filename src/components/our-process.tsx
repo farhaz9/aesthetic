@@ -1,6 +1,5 @@
-import { Calendar, UserCheck, Microscope } from 'lucide-react';
-
-export default function OurProcess() {
+'use client';
+import { Calendar, UserCheck, Microscope, Home, Award } from 'lucide-react';
 
 const steps = [
   {
@@ -20,6 +19,7 @@ const steps = [
   },
 ]
 
+export default function OurProcess() {
   return (
     <section id="about" className="bg-secondary">
       <div className="container mx-auto px-4">
