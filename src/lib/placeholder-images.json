@@ -35,18 +35,6 @@
       "description": "Avatar for a happy man from Delhi in his 50s.",
       "imageUrl": "https://images.unsplash.com/photo-1615712797233-526e03803b33?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxvbGRlciUyMGluZGlhbiUyMG1hbnxlbnwwfHx8fDE3NjIwODYwMDB8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "older indian"
-    },
-    {
-      "id": "hair-patch-before",
-      "description": "A man showing hair loss on the crown of his head before receiving a hair patch.",
-      "imageUrl": "https://images.unsplash.com/photo-1621874263013-356a5249a5d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtYW4lMjBoYWlyJTIwbG9zc3xlbnwwfHx8fDE3NjIyNDg0ODR8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "man hair loss"
-    },
-    {
-      "id": "hair-patch-after",
-      "description": "A happy man with a full head of hair after receiving a custom hair patch.",
-      "imageUrl": "https://images.unsplash.com/photo-1607346256330-7245749c1b92?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxpbmRpYW4lMjBtYW4lMjBzbWlsaW5nJTIwY2xvc2V1cHxlbnwwfHx8fDE3NjIyNDg2MzV8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "man smiling"
     }
   ]
 }
