@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Home, Stethoscope, Phone, CalendarPlus } from 'lucide-react';
+import { Home, Sparkles, Phone, CalendarPlus } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const WhatsAppIcon = ({ className }: { className?: string }) => (
@@ -19,7 +19,7 @@ const WhatsAppIcon = ({ className }: { className?: string }) => (
 );
 
 const navLinks = [
-  { href: '/treatments', label: 'Treatments', icon: Stethoscope },
+  { href: '/treatments', label: 'Treatments', icon: Sparkles },
   { href: '/#appointment', label: 'Book Appt.', icon: CalendarPlus },
   { href: '/', label: 'Home', icon: Home },
   { href: '/contact', label: 'Contact', icon: Phone },
