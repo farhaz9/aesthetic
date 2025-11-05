@@ -8,12 +8,12 @@ export default function Hero() {
     <section id="home" className="relative h-[85vh] min-h-[600px] w-full flex items-center p-0">
        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-black/30 z-10" />
        <Image
-          src="https://images-five-gilt.vercel.app/1759649928.png"
-          alt="A discreet and professional at-home hair transplant setup"
+          src="https://images-five-gilt.vercel.app/hair%20patch%20smaller.png"
+          alt="A man with a full head of hair after receiving a non-surgical hair patch"
           fill
           className="object-cover"
           priority
-          data-ai-hint="modern clinic"
+          data-ai-hint="hair patch"
         />
       <div className="container relative z-20 mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-8 px-4">
         <div className="text-center md:text-left text-white">
