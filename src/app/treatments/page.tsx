@@ -24,8 +24,8 @@ const featuredServicesData = [
     link: '#',
   },
   {
-    name: 'PRP & GFC Therapy',
-    description: 'Stimulate natural hair growth and strengthen your follicles with Platelet-Rich Plasma (PRP) and Growth Factor Concentrate (GFC) therapies. A non-surgical boost for healthier, thicker hair, available at home.',
+    name: 'Growth Factor Concentrate (GFC) Therapy',
+    description: 'Stimulate natural hair growth and strengthen your follicles with Growth Factor Concentrate (GFC) therapy. A non-surgical boost for healthier, thicker hair, available at home.',
     imageId: 'service-body',
     link: '#',
   },
