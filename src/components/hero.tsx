@@ -11,7 +11,7 @@ export default function Hero() {
           src="https://images-five-gilt.vercel.app/hair%20patch%20smaller.png"
           alt="A man with a full head of hair after receiving a non-surgical hair patch"
           fill
-          className="object-cover"
+          className="object-cover object-center"
           priority
           data-ai-hint="hair patch"
         />
