@@ -9,6 +9,7 @@ import AppointmentForm from '@/components/appointment-form';
 import Footer from '@/components/footer';
 import BottomNav from '@/components/bottom-nav';
 import ScrollToTop from '@/components/scroll-to-top';
+import BeforeAfter from '@/components/before-after';
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <main className="flex-1 pb-16">
         <Hero />
         <FeaturedServices />
+        <BeforeAfter />
         <AppointmentForm />
         <OurProcess />
         <Testimonials />
