@@ -19,7 +19,7 @@ const WhatsAppIcon = ({ className }: { className?: string }) => (
 );
 
 const navLinks = [
-  { href: '/treatments', label: 'Solutions', icon: Stethoscope },
+  { href: '/treatments', label: 'Treatments', icon: Stethoscope },
   { href: '/#appointment', label: 'Book Visit', icon: CalendarCheck },
   { href: '/', label: 'Home', icon: Home },
   { href: '/contact', label: 'Contact', icon: Phone },

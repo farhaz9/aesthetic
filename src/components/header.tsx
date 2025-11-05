@@ -6,7 +6,7 @@ import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Menu } from 'lucide-react';
 
 const navLinks = [
-  { href: '/treatments', label: 'Solutions' },
+  { href: '/treatments', label: 'Treatments' },
   { href: '/#appointment', label: 'Book Visit' },
   { href: '/contact', label: 'Contact' },
   { href: 'https://wa.me/919876543210', label: 'WhatsApp' },
