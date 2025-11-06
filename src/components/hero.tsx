@@ -18,8 +18,8 @@ export default function Hero() {
       <div className="container relative z-20 mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-8 px-4">
         <div className="text-center md:text-left text-white">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight">
-            <span className="block animate-fade-in-up fade-in-up-1">Your Crown, Reimagined.</span>
-            <span className="text-accent block animate-fade-in-up fade-in-up-2">At Home in Delhi.</span>
+            <span className="block animate-fade-in-up fade-in-up-1">The Fastest Way to a Full Head of Hair.</span>
+            <span className="text-accent block animate-fade-in-up fade-in-up-2">Instant, Natural-Looking Results.</span>
           </h1>
           <p className="mt-4 max-w-xl mx-auto md:mx-0 text-lg md:text-xl text-white/90 animate-fade-in-up fade-in-up-3">
             Experience Delhi's finest hair transplant and hair patch solutions, delivered with discretion and expertise in the comfort of your own home.
