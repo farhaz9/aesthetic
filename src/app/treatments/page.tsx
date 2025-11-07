@@ -49,7 +49,7 @@ export default function TreatmentsPage() {
         <section className="py-12 md:py-24 lg:py-32" ref={ref}>
           <div className={cn("container mx-auto px-4 transition-opacity duration-1000 ease-out", inView ? 'animate-fade-in-up' : 'opacity-0')}>
             <div className="text-center mb-12">
-              <h1 className="text-4xl md:text-5xl font-bold font-headline text-gradient-animated">Our At-Home Solutions</h1>
+              <h1 className="text-4xl md:text-5xl font-bold font-headline">Our At-Home Solutions</h1>
               <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">
                 ElysiarCrown brings world-class hair restoration and non-surgical solutions right to your doorstep in Delhi.
               </p>

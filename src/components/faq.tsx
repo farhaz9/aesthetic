@@ -40,7 +40,7 @@ export default function Faq() {
     <section id="faq" className="bg-background" ref={ref}>
       <div className={cn("container mx-auto px-4 transition-opacity duration-1000 ease-out", inView ? 'animate-fade-in-up' : 'opacity-0')}>
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gradient-animated">
+          <h2 className="text-3xl md:text-4xl font-bold">
             Frequently Asked Questions
           </h2>
           <p className="text-lg text-muted-foreground mt-2 max-w-3xl mx-auto">

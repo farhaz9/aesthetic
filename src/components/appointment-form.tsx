@@ -62,7 +62,7 @@ export default function AppointmentForm() {
                         <div className="mx-auto bg-primary/10 rounded-full p-4 flex items-center justify-center w-fit mb-4">
                            <CalendarCheck className="w-10 h-10 text-primary" />
                         </div>
-                        <CardTitle className="text-3xl md:text-4xl font-bold text-gradient-animated">Book Your At-Home Consultation</CardTitle>
+                        <CardTitle className="text-3xl md:text-4xl font-bold">Book Your At-Home Consultation</CardTitle>
                         <CardDescription className="text-lg text-muted-foreground mt-2">
                             Take the first step towards your transformation. Fill out the form to schedule a private, confidential consultation at your home in Delhi.
                         </CardDescription>
