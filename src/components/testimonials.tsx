@@ -1,7 +1,11 @@
+'use client';
 import { Card, CardContent } from '@/components/ui/card';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { PlaceHolderImages, type ImagePlaceholder } from '@/lib/placeholder-images';
+import { useInView } from 'react-intersection-observer';
+import { cn } from '@/lib/utils';
+
 
 const testimonialsData = [
   {
@@ -29,11 +33,15 @@ const getImage = (id: string): ImagePlaceholder | undefined => {
 }
 
 export default function Testimonials() {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
   return (
-    <section id="testimonials" className="bg-background">
-      <div className="container mx-auto px-4">
+    <section id="testimonials" className="bg-background" ref={ref}>
+      <div className={cn("container mx-auto px-4 transition-opacity duration-1000 ease-out", inView ? 'animate-fade-in-up' : 'opacity-0')}>
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold">Success Stories from Delhi</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gradient-animated">Success Stories from Delhi</h2>
           <p className="text-lg text-muted-foreground mt-2 max-w-2xl mx-auto">
             Hear from our clients who transformed their look and confidence with our discreet at-home services.
           </p>

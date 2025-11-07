@@ -16,6 +16,8 @@ import { Textarea } from '@/components/ui/textarea';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { useToast } from '@/hooks/use-toast';
 import { CalendarCheck } from 'lucide-react';
+import { useInView } from 'react-intersection-observer';
+import { cn } from '@/lib/utils';
 
 const formSchema = z.object({
   name: z.string().min(2, { message: 'Name must be at least 2 characters.' }),
@@ -38,6 +40,11 @@ export default function AppointmentForm() {
         },
     });
 
+    const { ref, inView } = useInView({
+      triggerOnce: true,
+      threshold: 0.1,
+    });
+
     function onSubmit(values: z.infer<typeof formSchema>) {
         console.log(values);
         toast({
@@ -48,14 +55,14 @@ export default function AppointmentForm() {
     }
 
     return (
-        <section id="appointment" className="bg-secondary">
-            <div className="container mx-auto px-4">
+        <section id="appointment" className="bg-secondary" ref={ref}>
+            <div className={cn("container mx-auto px-4 transition-opacity duration-1000 ease-out", inView ? 'animate-fade-in-up' : 'opacity-0')}>
                 <Card className="max-w-3xl mx-auto">
                     <CardHeader className="text-center">
                         <div className="mx-auto bg-primary/10 rounded-full p-4 flex items-center justify-center w-fit mb-4">
                            <CalendarCheck className="w-10 h-10 text-primary" />
                         </div>
-                        <CardTitle className="text-3xl md:text-4xl font-bold">Book Your At-Home Consultation</CardTitle>
+                        <CardTitle className="text-3xl md:text-4xl font-bold text-gradient-animated">Book Your At-Home Consultation</CardTitle>
                         <CardDescription className="text-lg text-muted-foreground mt-2">
                             Take the first step towards your transformation. Fill out the form to schedule a private, confidential consultation at your home in Delhi.
                         </CardDescription>

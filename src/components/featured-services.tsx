@@ -5,6 +5,8 @@ import { PlaceHolderImages, type ImagePlaceholder } from '@/lib/placeholder-imag
 import { Button } from './ui/button';
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
+import { useInView } from 'react-intersection-observer';
+import { cn } from '@/lib/utils';
 
 const featuredServicesData = [
   {
@@ -32,12 +34,17 @@ const getImage = (id: string): ImagePlaceholder | undefined => {
 }
 
 export default function FeaturedServices() {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
+
   return (
-    <section id="services" className="bg-secondary relative">
+    <section id="services" className="bg-secondary relative" ref={ref}>
       <div className="absolute inset-0 -z-0 bg-gradient-radial from-amber-100/50 to-transparent to-70% pointer-events-none" />
-      <div className="container mx-auto px-4 relative z-10">
+      <div className={cn("container mx-auto px-4 relative z-10 transition-opacity duration-1000 ease-out", inView ? 'animate-fade-in-up' : 'opacity-0')}>
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold">Services</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gradient-animated">Services</h2>
           <p className="text-lg text-muted-foreground mt-2 max-w-3xl mx-auto">
             We deliver Delhi's best hair restoration expertise right to your doorstep, ensuring privacy, comfort, and exceptional results.
           </p>
@@ -62,8 +69,8 @@ export default function FeaturedServices() {
                   )}
                 </CardContent>
                 <CardHeader>
-                  <CardTitle className="font-headline text-xl group-hover:text-primary transition-colors duration-300 relative pb-2">{service.name}
-                   <span className="absolute bottom-0 left-0 h-0.5 bg-primary w-0 group-hover:w-1/3 transition-all duration-300"></span>
+                  <CardTitle className="font-headline text-xl text-foreground transition-colors duration-300 relative pb-2">{service.name}
+                   <span className="absolute bottom-0 left-0 h-0.5 bg-primary w-1/3 transition-all duration-300"></span>
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="flex-grow flex flex-col justify-between">

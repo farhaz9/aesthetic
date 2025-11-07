@@ -9,6 +9,8 @@ import BottomNav from '@/components/bottom-nav';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { PlaceHolderImages, type ImagePlaceholder } from '@/lib/placeholder-images';
+import { useInView } from 'react-intersection-observer';
+import { cn } from '@/lib/utils';
 
 const featuredServicesData = [
   {
@@ -36,14 +38,18 @@ const getImage = (id: string): ImagePlaceholder | undefined => {
 }
 
 export default function TreatmentsPage() {
+    const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
   return (
     <div className="flex flex-col min-h-screen bg-secondary">
       <Header />
       <main className="flex-1">
-        <section className="py-12 md:py-24 lg:py-32">
-          <div className="container mx-auto px-4">
+        <section className="py-12 md:py-24 lg:py-32" ref={ref}>
+          <div className={cn("container mx-auto px-4 transition-opacity duration-1000 ease-out", inView ? 'animate-fade-in-up' : 'opacity-0')}>
             <div className="text-center mb-12">
-              <h1 className="text-4xl md:text-5xl font-bold font-headline">Our At-Home Solutions</h1>
+              <h1 className="text-4xl md:text-5xl font-bold font-headline text-gradient-animated">Our At-Home Solutions</h1>
               <p className="text-lg text-muted-foreground mt-4 max-w-3xl mx-auto">
                 ElysiarCrown brings world-class hair restoration and non-surgical solutions right to your doorstep in Delhi.
               </p>
@@ -66,8 +72,8 @@ export default function TreatmentsPage() {
                       </div>
                     )}
                     <div className="md:w-2/3 w-full flex flex-col justify-center">
-                      <h3 className="text-2xl font-headline font-bold mb-2 text-primary relative pb-2">{service.name}
-                        <span className="absolute bottom-0 left-0 h-0.5 bg-primary w-0 group-hover:w-1/3 transition-all duration-300"></span>
+                      <h3 className="text-2xl font-headline font-bold mb-2 text-foreground relative pb-2">{service.name}
+                        <span className="absolute bottom-0 left-0 h-0.5 bg-primary w-1/3 transition-all duration-300"></span>
                       </h3>
                       <p className="text-muted-foreground mb-4">{service.description}</p>
                       <Button variant="default" asChild className="w-full md:w-auto mt-auto self-start">

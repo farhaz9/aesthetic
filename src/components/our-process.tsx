@@ -1,5 +1,7 @@
 'use client';
 import { Calendar, UserCheck, Microscope, Home, Award } from 'lucide-react';
+import { useInView } from 'react-intersection-observer';
+import { cn } from '@/lib/utils';
 
 const steps = [
   {
@@ -20,11 +22,15 @@ const steps = [
 ]
 
 export default function OurProcess() {
+   const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
   return (
-    <section id="about" className="bg-secondary">
-      <div className="container mx-auto px-4">
+    <section id="about" className="bg-secondary" ref={ref}>
+      <div className={cn("container mx-auto px-4 transition-opacity duration-1000 ease-out", inView ? 'animate-fade-in-up' : 'opacity-0')}>
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold">Your Journey to a Fuller Crown</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gradient-animated">Your Journey to a Fuller Crown</h2>
           <p className="text-lg text-muted-foreground mt-2 max-w-3xl mx-auto">
             Our process is designed for your ultimate comfort and privacy, delivering world-class results at your home in Delhi.
           </p>

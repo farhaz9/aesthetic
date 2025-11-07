@@ -122,4 +122,23 @@
   .fade-in-up-3 { animation-delay: 0.3s; opacity: 0; }
   .fade-in-up-4 { animation-delay: 0.4s; opacity: 0; }
   .fade-in-up-5 { animation-delay: 0.5s; opacity: 0; }
+
+  @keyframes gradient-move {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .text-gradient-animated {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(to right, hsl(var(--primary)), hsl(var(--accent)), hsl(var(--primary)));
+    background-size: 200% auto;
+    animation: gradient-move 4s linear infinite;
+  }
 }
