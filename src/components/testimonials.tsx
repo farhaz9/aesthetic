@@ -91,7 +91,7 @@ export default function Testimonials() {
                                     <AvatarFallback>{testimonial.name.charAt(0)}</AvatarFallback>
                                   </Avatar>
                                   <div>
-                                    <p className="text-lg font-semibold font-headline text-primary">{testimonial.name}</p>
+                                    <p className="text-lg font-semibold font-headline text-foreground">{testimonial.name}</p>
                                     <p className="text-sm text-muted-foreground">{testimonial.procedure}</p>
                                   </div>
                               </div>
