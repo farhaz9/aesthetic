@@ -33,15 +33,17 @@ const getImage = (id: string): ImagePlaceholder | undefined => {
 }
 
 const GoogleFullTextLogo = () => (
-    <span className="font-semibold text-muted-foreground">
-        <span style={{ color: '#4285F4' }}>G</span>
-        <span style={{ color: '#DB4437' }}>o</span>
-        <span style={{ color: '#F4B400' }}>o</span>
-        <span style={{ color: '#4285F4' }}>g</span>
-        <span style={{ color: '#0F9D58' }}>l</span>
-        <span style={{ color: '#DB4437' }}>e</span>
-        <span className="ml-1">Reviews</span>
-    </span>
+    <div className="text-center">
+        <span className="font-semibold text-xl">
+            <span style={{ color: '#4285F4' }}>G</span>
+            <span style={{ color: '#DB4437' }}>o</span>
+            <span style={{ color: '#F4B400' }}>o</span>
+            <span style={{ color: '#4285F4' }}>g</span>
+            <span style={{ color: '#0F9D58' }}>l</span>
+            <span style={{ color: '#DB4437' }}>e</span>
+        </span>
+        <div className="text-xs font-medium text-muted-foreground">Reviews</div>
+    </div>
 );
 
 
@@ -77,9 +79,7 @@ export default function Testimonials() {
                         <Card className="h-full flex flex-col bg-secondary border-secondary">
                             <CardContent className="flex flex-col items-center text-center justify-center p-6 gap-4 flex-grow">
                               <div className="flex flex-col items-center gap-2">
-                                <div className="flex items-center gap-2">
-                                  <GoogleFullTextLogo />
-                                </div>
+                                <GoogleFullTextLogo />
                                 <div className="flex items-center">
                                   {[...Array(5)].map((_, i) => (
                                     <Star key={i} className="w-5 h-5 text-yellow-400 fill-yellow-400" />
