@@ -6,7 +6,7 @@ import Link from 'next/link';
 export default function Hero() {
   return (
     <section id="home" className="relative h-[85vh] min-h-[600px] w-full flex items-center p-0">
-       <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-orange-950/30 to-yellow-600/20 z-10" />
+       <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent z-10" />
        <Image
           src="https://images-five-gilt.vercel.app/hair%20patch%20smaller.png"
           alt="A man with a full head of hair after receiving a non-surgical hair patch"
