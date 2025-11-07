@@ -14,7 +14,7 @@ const featuredServicesData = [
     link: '/treatments',
   },
   {
-    name: 'Painless FUE Hair Transplant',
+    name: 'Hair Transplant',
     description: 'Our cutting-edge FUE technique ensures natural, dense results with minimal downtime, all performed by leading surgeons in Delhi.',
     imageId: 'service-hair-transplant',
     link: '/treatments',

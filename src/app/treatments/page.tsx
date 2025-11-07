@@ -18,7 +18,7 @@ const featuredServicesData = [
     link: '#',
   },
   {
-    name: 'Painless FUE Hair Transplant',
+    name: 'Hair Transplant',
     description: 'Our cutting-edge Follicular Unit Extraction (FUE) technique ensures natural, dense results with minimal downtime. The entire procedure is performed by Delhi’s leading surgeons in the comfort and privacy of your home.',
     imageId: 'service-hair-transplant',
     link: '#',
