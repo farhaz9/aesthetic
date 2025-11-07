@@ -25,7 +25,7 @@ export default function Header() {
               height={40} 
               className="h-10 w-10"
             />
-            <span className="font-bold font-headline text-xl text-primary">ElysiarCrown</span>
+            <span className="font-bold font-headline text-xl text-gradient-animated">ElysiarCrown</span>
           </Link>
         </div>
         
@@ -63,7 +63,7 @@ export default function Header() {
                             height={40} 
                             className="h-10 w-10"
                           />
-                          <span className="font-bold font-headline text-xl text-primary">ElysiarCrown</span>
+                          <span className="font-bold font-headline text-xl text-gradient-animated">ElysiarCrown</span>
                       </Link>
                       <nav className="grid gap-2">
                           {navLinks.map(link => (

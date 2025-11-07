@@ -19,7 +19,7 @@ export default function Footer() {
                 height={40} 
                 className="h-10 w-10"
               />
-              <span className="font-bold font-headline text-2xl text-primary">ElysiarCrown</span>
+              <span className="font-bold font-headline text-2xl text-gradient-animated">ElysiarCrown</span>
             </Link>
             <p className="text-muted-foreground pr-4">
              Delhi's premier at-home hair restoration service. Book your confidential consultation today.
