@@ -20,7 +20,7 @@ const featuredServicesData = [
     link: '/treatments',
   },
   {
-    name: 'GFC Therapy',
+    name: 'Hair Loss Treatment',
     description: 'Stimulate natural hair growth and strengthen existing hair with our advanced, non-surgical therapies, available at home.',
     imageId: 'service-body',
     link: '/treatments',

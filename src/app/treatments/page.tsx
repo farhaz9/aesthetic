@@ -24,7 +24,7 @@ const featuredServicesData = [
     link: '#',
   },
   {
-    name: 'Growth Factor Concentrate (GFC) Therapy',
+    name: 'Hair Loss Treatment',
     description: 'Stimulate natural hair growth and strengthen your follicles with Growth Factor Concentrate (GFC) therapy. A non-surgical boost for healthier, thicker hair, available at home.',
     imageId: 'service-body',
     link: '#',
