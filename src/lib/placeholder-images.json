@@ -14,9 +14,9 @@
     },
     {
       "id": "service-body",
-      "description": "A vial used for GFC therapy.",
-      "imageUrl": "https://images.unsplash.com/photo-1631589312868-80519302636a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxQUlAlMjB2aWFsfGVufDB8fHx8MTc2MjA4NTkzN3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "GFC therapy"
+      "description": "A client undergoing a hair loss treatment procedure.",
+      "imageUrl": "https://images-five-gilt.vercel.app/Hair-patch-25.jpg",
+      "imageHint": "hair treatment"
     },
     {
       "id": "testimonial-avatar-1",
