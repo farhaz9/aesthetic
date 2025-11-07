@@ -66,7 +66,9 @@ export default function TreatmentsPage() {
                       </div>
                     )}
                     <div className="md:w-2/3 w-full flex flex-col justify-center">
-                      <h3 className="text-2xl font-headline font-bold mb-2 text-primary">{service.name}</h3>
+                      <h3 className="text-2xl font-headline font-bold mb-2 text-primary relative pb-2">{service.name}
+                        <span className="absolute bottom-0 left-0 h-0.5 bg-primary w-0 group-hover:w-1/3 transition-all duration-300"></span>
+                      </h3>
                       <p className="text-muted-foreground mb-4">{service.description}</p>
                       <Button variant="default" asChild className="w-full md:w-auto mt-auto self-start">
                         <Link href="/#appointment">

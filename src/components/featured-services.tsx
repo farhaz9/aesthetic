@@ -62,7 +62,9 @@ export default function FeaturedServices() {
                   )}
                 </CardContent>
                 <CardHeader>
-                  <CardTitle className="font-headline text-xl group-hover:text-primary transition-colors duration-300">{service.name}</CardTitle>
+                  <CardTitle className="font-headline text-xl group-hover:text-primary transition-colors duration-300 relative pb-2">{service.name}
+                   <span className="absolute bottom-0 left-0 h-0.5 bg-primary w-0 group-hover:w-1/3 transition-all duration-300"></span>
+                  </CardTitle>
                 </CardHeader>
                 <CardContent className="flex-grow flex flex-col justify-between">
                   <p className="text-muted-foreground mb-6">{service.description}</p>
