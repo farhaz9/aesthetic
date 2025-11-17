@@ -18,6 +18,9 @@ import { useToast } from '@/hooks/use-toast';
 import { CalendarCheck } from 'lucide-react';
 import { useInView } from 'react-intersection-observer';
 import { cn } from '@/lib/utils';
+import { submitAppointment } from '@/lib/actions';
+import { useEffect, useRef } from 'react';
+import { useGoogleReCaptcha } from 'react-google-recaptcha-v3';
 
 const formSchema = z.object({
   name: z.string().min(2, { message: 'Name must be at least 2 characters.' }),
@@ -29,6 +32,10 @@ const formSchema = z.object({
 
 export default function AppointmentForm() {
     const { toast } = useToast();
+    const formRef = useRef<HTMLFormElement>(null);
+
+    const { executeRecaptcha } = useGoogleReCaptcha();
+
     const form = useForm<z.infer<typeof formSchema>>({
         resolver: zodResolver(formSchema),
         defaultValues: {
@@ -45,13 +52,37 @@ export default function AppointmentForm() {
       threshold: 0.1,
     });
 
-    function onSubmit(values: z.infer<typeof formSchema>) {
-        console.log(values);
-        toast({
-            title: "Consultation Request Sent!",
-            description: `Thank you, ${values.name}. We will contact you shortly to confirm your at-home consultation.`,
+    async function onSubmit(values: z.infer<typeof formSchema>) {
+        if (!executeRecaptcha) {
+            toast({
+                variant: 'destructive',
+                title: "Uh oh! Something went wrong.",
+                description: "ReCAPTCHA not ready. Please try again.",
+            });
+            return;
+        }
+
+        const captchaToken = await executeRecaptcha('appointment_form');
+        
+        const formData = new FormData();
+        Object.entries(values).forEach(([key, value]) => {
+            if (value) {
+                formData.append(key, value);
+            }
         });
-        form.reset();
+        formData.append('captchaToken', captchaToken);
+
+        const result = await submitAppointment(undefined as any, formData);
+
+        toast({
+            title: result.success ? "Request Sent!" : "Uh oh! Something went wrong.",
+            description: result.message,
+            variant: result.success ? 'default' : 'destructive'
+        });
+
+        if (result.success) {
+            form.reset();
+        }
     }
 
     return (
@@ -69,7 +100,7 @@ export default function AppointmentForm() {
                     </CardHeader>
                     <CardContent>
                         <Form {...form}>
-                            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+                            <form ref={formRef} onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                     <FormField
                                         control={form.control}
@@ -142,7 +173,9 @@ export default function AppointmentForm() {
                                         </FormItem>
                                     )}
                                 />
-                                <Button type="submit" size="lg" className="w-full">Request My Consultation</Button>
+                                <Button type="submit" size="lg" className="w-full" disabled={form.formState.isSubmitting}>
+                                    {form.formState.isSubmitting ? 'Sending...' : 'Request My Consultation'}
+                                </Button>
                             </form>
                         </Form>
                     </CardContent>
