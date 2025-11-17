@@ -19,8 +19,7 @@ import { CalendarCheck } from 'lucide-react';
 import { useInView } from 'react-intersection-observer';
 import { cn } from '@/lib/utils';
 import { submitAppointment } from '@/lib/actions';
-import { useEffect, useRef } from 'react';
-import { useGoogleReCaptcha } from 'react-google-recaptcha-v3';
+import { useRef } from 'react';
 
 const formSchema = z.object({
   name: z.string().min(2, { message: 'Name must be at least 2 characters.' }),
@@ -33,8 +32,6 @@ const formSchema = z.object({
 export default function AppointmentForm() {
     const { toast } = useToast();
     const formRef = useRef<HTMLFormElement>(null);
-
-    const { executeRecaptcha } = useGoogleReCaptcha();
 
     const form = useForm<z.infer<typeof formSchema>>({
         resolver: zodResolver(formSchema),
@@ -53,24 +50,12 @@ export default function AppointmentForm() {
     });
 
     async function onSubmit(values: z.infer<typeof formSchema>) {
-        if (!executeRecaptcha) {
-            toast({
-                variant: 'destructive',
-                title: "Uh oh! Something went wrong.",
-                description: "ReCAPTCHA not ready. Please try again.",
-            });
-            return;
-        }
-
-        const captchaToken = await executeRecaptcha('appointment_form');
-        
         const formData = new FormData();
         Object.entries(values).forEach(([key, value]) => {
             if (value) {
                 formData.append(key, value);
             }
         });
-        formData.append('captchaToken', captchaToken);
 
         const result = await submitAppointment(undefined as any, formData);
 

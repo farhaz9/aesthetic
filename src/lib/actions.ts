@@ -30,7 +30,6 @@ const appointmentFormSchema = z.object({
   phone: z.string().min(10, { message: 'Please enter a valid phone number.' }),
   service: z.string().optional(),
   message: z.string().optional(),
-  captchaToken: z.string(),
 });
 
 type AppointmentFormState = {
@@ -49,7 +48,6 @@ export async function submitAppointment(
     phone: formData.get('phone'),
     service: formData.get('service'),
     message: formData.get('message'),
-    captchaToken: formData.get('captchaToken'),
   });
 
   if (!validatedFields.success) {
@@ -59,20 +57,7 @@ export async function submitAppointment(
     };
   }
 
-  const { name, email, phone, service, message, captchaToken } = validatedFields.data;
-
-  // Verify CAPTCHA
-  const recaptchaResponse = await fetch('https://www.google.com/recaptcha/api/siteverify', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-    body: `secret=${process.env.RECAPTCHA_SECRET_KEY}&response=${captchaToken}`,
-  });
-
-  const recaptchaData = await recaptchaResponse.json();
-
-  if (!recaptchaData.success || recaptchaData.score < 0.5) {
-    return { success: false, message: 'CAPTCHA verification failed.' };
-  }
+  const { name, email, phone, service, message } = validatedFields.data;
 
   try {
     // Send email to admin
